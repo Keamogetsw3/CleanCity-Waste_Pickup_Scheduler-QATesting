@@ -6,8 +6,10 @@
 **Team Name:** KNS  
 **Submission Date:** 2025-11-18
 
-Executive Summary
-Test Strategy and Approach
+## Executive Summary
+## Test Strategy and Approach
+Manual and automated test cases were executed
+
 Test Environment Details
 Test Execution Summary
 Defect Analysis and Categorization
