@@ -11,7 +11,24 @@
 Manual and automated test cases were executed
 
 Test Environment Details
-Test Execution Summary
+## Test Execution Summary
+### Manual Test
+| **Test Type**      | **Total Cases** | **Passed** | **Failed** | **Blocked** | **Pass %** |
+| ------------------ | --------------- | ---------- | ---------- | ----------- | ---------- |
+| Functional         |               |          |          | 0           | %        |
+| UI/UX              |              |         |         | 0           | %        |
+| Exploratory        |              |         |         | 0           | %        |
+| **Total (Manual)** | ****          | ****     | ****      | **0**       | **%**  |
+
+### Automated Test
+
+| **Test Type**      | **Total Cases** | **Passed** | **Failed** | **Blocked** | **Pass %** |
+| ------------------ | --------------- | ---------- | ---------- | ----------- | ---------- |
+| Functional         |               |          |          | 0           | %        |
+| UI/UX              |              |         |         | 0           | %        |
+| Exploratory        |              |         |         | 0           | %        |
+| **Total (Manual)** | ****          | ****     | ****      | **0**       | **%**  |
+
 Defect Analysis and Categorization
 Risk Assessment
 Recommendations and Improvements
