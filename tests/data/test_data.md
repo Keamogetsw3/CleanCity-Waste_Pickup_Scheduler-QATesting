@@ -8,8 +8,12 @@
 **Prepared For:** QA Testing Teams  
 
 ---
+## Overview:
+This file contains test data and scenarios for various features of the project, including registration, login and other functionalities. It provides structured inputs, expected results and notes to support consistent manual and automated testing across the application.
 
 ## 👤 **Test User Accounts**
+
+### **Test Account for Registration Testing**
 
 ### **Regular User Accounts**
 ```
