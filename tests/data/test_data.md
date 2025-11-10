@@ -22,12 +22,12 @@ This file contains test data and scenarios for various features of the project, 
 
 
 ### **Regular User Accounts**
-| Test Case ID | Test Scenario                | Email                                   | Password    | Expected Result                     | Notes              |
-| ------------ | ---------------------------- | --------------------------------------- | ----------- | ----------------------------------- | ------------------ |
-| TC002      | Login     | [newuser@test.com](mailto:newuser@test.com) | NewPass123 | Successfully logged in | Positive test case |
-| TC003      | Login     | [user1@test.com](mailto:user1@test.com) | TestPass123 | Successfully logged in | Positive test case |
-| TC004       | Login     | [user2@test.com](mailto:user2@test.com) | TestPass123 | Successfully logged in | Positive test case |
-| TC005       | Login     | [user3@test.com](mailto:user3@test.com) | TestPass123 | Successfully logged in | Positive test case |
+| Test Case ID | Test Scenario | Full Name     | Email                                       | Password    | Role | Expected Result        | Notes              |
+| ------------ | ------------- | ------------- | ------------------------------------------- | ----------- | ---- | ---------------------- | ------------------ |
+| TC002        | Login         | New Test User | [newuser@test.com](mailto:newuser@test.com) | NewPass123  | User | Successfully logged in | Positive test case |
+| TC003        | Login         | John Doe      | [user1@test.com](mailto:user1@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
+| TC004        | Login         | Jane Smith    | [user2@test.com](mailto:user2@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
+| TC005        | Login         | Mike Johnson   | [user3@test.com](mailto:user3@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
 
 
 
