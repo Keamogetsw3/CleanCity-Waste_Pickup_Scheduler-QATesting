@@ -4,7 +4,7 @@
 
 | ID   | Issue Title                               | Severity  | Risk ID | Status             | GitHub Link |
 |------|-------------------------------------------|----------|--------|------------------|------------|
-| F001 | Form allows submission without required fields | Critical | R001   | Open / In Progress / Resolved / Closed | [Link](#) |
+| D001 | Profile shows email instead of full name | Medium | R00  | Open | [Link](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/28) |
 | F002 | Pickup request filter shows wrong location | Major    | R002   | Open / In Progress / Resolved / Closed | [Link](#) |
 | F003 | Admin panel button doesn't update UI immediately | Major | R003 | Open / In Progress / Resolved / Closed | [Link](#) |
 
