@@ -66,7 +66,7 @@ The purpose of this report is to validate that the application meets its functio
 | Test Case ID | Test Description                          | Test Type   | Expected Result                       | Actual Result                | Status  | Defect ID | Severity | Tester          | Date       |
 |--------------|-------------------------------------------|------------|---------------------------------------|------------------------------|---------|-----------|---------|----------------|-----------|
 | TC-006      | Verify login with valid credentials       | Functional | User should be logged in successfully | User successfully logged in  | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC-007      | Verify login with invalid password        | Functional | System should display error  | User succefully logged in | Fail ❌ | —         | —       | Keamogetswe | 2025-11-10 |
+| TC-007      | Verify login with invalid password        | Functional | System should display error  | User succefully logged in | Fail ❌ | [D-002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)       | Critical     | Keamogetswe | 2025-11-10 |
 | TC-008      | Verify login with non-existent user       | Functional | System should display error           | Error displayed              | Pass ✅ | —         | —       | Keamogetswe | 2025-11-10 |
 
 
