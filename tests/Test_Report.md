@@ -16,8 +16,8 @@ Test Environment Details
 | **Test Type**      | **Total Cases** | **Passed** | **Failed** | **Blocked** | **Pass %** |
 | ------------------ | --------------- | ---------- | ---------- | ----------- | ---------- |
 | Functional         |               |          |          | 0           | %        |
-| UI/UX              |              |         |         | 0           | %        |
-| Exploratory        |              |         |         | 0           | %        |
+|    Non-Functional          |              |         |         | 0           | %        |
+| UI/UX        |              |         |         | 0           | %        |
 | **Total (Manual)** | ****          | ****     | ****      | **0**       | **%**  |
 
 ### Automated Test
@@ -25,12 +25,11 @@ Test Environment Details
 | **Test Type**      | **Total Cases** | **Passed** | **Failed** | **Blocked** | **Pass %** |
 | ------------------ | --------------- | ---------- | ---------- | ----------- | ---------- |
 | Functional         |               |          |          | 0           | %        |
-| UI/UX              |              |         |         | 0           | %        |
-| Exploratory        |              |         |         | 0           | %        |
+|     Non-Functional           |              |         |         | 0           | %        |
+|    UI/UX    |              |         |         | 0           | %        |
 | **Total (Manual)** | ****          | ****     | ****      | **0**       | **%**  |
 
 Defect Analysis and Categorization
 Risk Assessment
 Recommendations and Improvements
-Test Metrics and KPIs
-Jira/Github Kanban Reports: Include screenshots of Jira dashboards and reports
+
