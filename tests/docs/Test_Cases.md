@@ -15,7 +15,7 @@
 | TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
 |--------------|----------|------------|----------------|----------------|---------|-----------|
 | TC001 | Registration | Register new user with valid data | Account created successfully | Account successfully created | Pass ✅ | R002 |
-| TC002 | Registration | Register user with invalid email | Validation error displayed | TBD | TBD | R002 |
+| TC002 | Registration | Register user with invalid email | Validation error displayed | Error was shown | Pass ✅| R002 |
 | TC003 | Login | Login with correct credentials | Access granted | Logged in successfully | Pass ✅ | R003 |
 | TC004 | Login | Login with wrong credentials | Error message displayed | TBD | TBD | R003 |
 | TC005 | Pickup Scheduling | Schedule new pickup | Request created successfully | TBD | TBD | R006 |
