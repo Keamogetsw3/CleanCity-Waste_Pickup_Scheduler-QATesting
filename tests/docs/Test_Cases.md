@@ -61,7 +61,7 @@
 
 ---
 
-### **2. Waste Management Requirements**
+### **2. 🗑️ Waste Management Requirements**
 
 ---
 ### 2.1 
