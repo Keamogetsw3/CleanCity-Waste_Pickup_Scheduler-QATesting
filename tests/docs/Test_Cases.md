@@ -16,11 +16,11 @@
 
 | Test Case ID | Objective                         | Expected Result              | Risk Link |
 | ----- | --------------------------------- | ---------------------------- | --------- |
-| TC-001 | Register new user with valid data | Account created successfully | R002      |
-| TC-002 | Register user with invalid email  | Validation error displayed   | R002      |
-| TC-003 | Register user with empty name     | Validation error displayed   | R002      |
-| TC-004 | Register user with empty email    | Validation error displayed   | R002      |
-| TC-005 | Register user with empty password | Validation error displayed   | R002      |
+| TC-001 | Register new user with valid data | Account created successfully | R001      |
+| TC-002 | Register user with invalid email  | Validation error displayed   | R001      |
+| TC-003 | Register user with empty name     | Validation error displayed   | R001      |
+| TC-004 | Register user with empty email    | Validation error displayed   | R001      |
+| TC-005 | Register user with empty password | Validation error displayed   | R001      |
 
 
 
