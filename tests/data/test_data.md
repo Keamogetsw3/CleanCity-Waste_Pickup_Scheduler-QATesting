@@ -147,7 +147,7 @@ This file contains test data and scenarios for various features of the project, 
 #### **Registration Form**
 | Test Case ID | Test Scenario                | Full Name | Email                                       | Password     | Expected Result                                   | Notes              |
 | ------------ | ---------------------------- | --------- | ------------------------------------------- | ------------ | ------------------------------------------------- | ------------------ |
-| TC-001       | Valid registration           | Valid Name  | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Registration successful                           | Positive test case |
+| TC-001 | Valid registration           | Valid Name  | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Registration successful                           | Positive test case |
 | TC-002       | Invalid email format         | Valid Name  | invalidemail.com                            | ValidPass123 | Error: "Enter a valid email"                      | Negative test case |
 | TC-003       | Full Name empty              |           | [valid@email.com](mailto:valid@email.com)   | ValidPass123 | Error: "Full Name is required"                    | Negative test case |
 | TC-004       | Email empty                  | John Doe  |                                             | ValidPass123 | Error: "Email is required"                        | Negative test case |
@@ -164,14 +164,14 @@ This file contains test data and scenarios for various features of the project, 
 
 #### **Pickup Scheduling Form**
 
-| Test Case ID | Test Scenario                                   | Full Name    | Email                  | Location | Waste Type | Date       | Instructions                                                                 |
-|--------------|-------------------------------------------------|--------------|------------------------|---------|------------|-----------|----------------------------------------------------------------------------|
-| TC-023       | Valid pickup request                             |  Check User        |                        |         |            |    |                                                                            |
-| TC-024       | Invalid pickup request (invalid data)           |  Check User |                        |         |            |           |                                                                            |
-| TC-025       | Invalid pickup request (Yesterday’s date)       |  Check User |                        |         |            |           |                                                                            |
-| TC-026       | Invalid pickup request (empty Waste Type)       |   Check User   |                        |         |            |           |                                                                            |
-| TC-027       | Invalid pickup request (empty Quantity)         |  Check User |                        |         |            |           |                                                                            |
-| TC-028       | Invalid pickup request (Very long text >200 chars) |  Check User |                        |         |            |           |                                                                            |
+| Test Case ID | Test Scenario                                 | Full Name    | Email                  | Location | Waste Type | Date       | Instructions                                                                 |
+|--------------|-----------------------------------------------|--------------|------------------------|---------|------------|-----------|----------------------------------------------------------------------------|
+| TC-023 | Valid pickup request                             |  Check User | checkuser@email.com | Nairobi |            |    |                                                                            |
+| TC-024 | Invalid pickup request (invalid data)           |  Check User | checkuser@email.com | *(empty)*  | *(empty)* | *(empty)*  |  *(empty)* |
+| TC-025 | Invalid pickup request (Yesterday’s date)       |  Check User | checkuser@email.com | Nairobi |            |           |                                                                            |
+| TC-026 | Invalid pickup request (empty Waste Type)       |   Check User   | checkuser@email.com | Nairobi | *(empty)* |           |                                                                            |
+| TC-027 | Invalid pickup request (empty Quantity)         |  Check User | checkuser@email.com | Nairobi |            |           |                                                                            |
+| TC-028 | Invalid pickup request (Very long text >200 chars) |  Check User | checkuser@email.com | Nairobi |            |           |                                                                            |
 
 
 
