@@ -100,9 +100,16 @@ The purpose of this report is to validate that the application meets its functio
 
 ---
 #### Table 4.6: Pickup Scheduling Test Cases
-| Test Case ID | Test Description                          | Test Type   | Expected Result                       | Actual Result                | Status  | Defect ID | Severity | Tester          | Date       |
-|--------------|-------------------------------------------|------------|---------------------------------------|------------------------------|---------|-----------|---------|----------------|-----------|
-| TC-023 | Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”) | Functional | Confirmation message showing that form is submitted and Pickup scheduled successfully |  Confirmation message displayed | Pass ✅  | — | — | Sally Trizer   | 2025-11-12 |
+
+|Test Case ID      | Test Description                                      | Test Type  | Expected Result                                         | Actual Result | Status | Defect ID | Severity | Tester | Date       |
+|---------|------------------------------------------------------|-----------|--------------------------------------------------------|---------------|--------|-----------|---------|--------|-----------|
+| TC-023  | Valid pickup request - Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”)   | Functional | Pickup request is successfully created | Confirmation message displayed   |    Pass ✅   | —  | —  | Sally Trizer  | 2025-11-12 |
+| TC-024  | Invalid pickup request (no data)                     | Functional | System shows validation errors for empty fields       |               |        |           |         |        |           |
+| TC-025  | Invalid pickup request (Yesterday’s date)            | Functional | System does not allow scheduling for past date        |               |        |           |         |        |           |
+| TC-026  | Invalid pickup request (empty Waste Type)            | Functional | System shows error indicating Waste Type is required |               |        |           |         |        |           |
+| TC-027  | Invalid pickup request (empty Location)              | Functional | System shows error indicating Location is required   |               |        |           |         |        |           |
+| TC-028  | Invalid pickup request (Very long text >200 chars)   | Functional | System truncates input or shows error for long text  |               |        |           |         |        |           |
+| FR-015  | The system shall prevent scheduling multiple pickups for the same date | Functional | System prevents creating duplicate pickups for the same date |               |        |           |         |        |           |
 
 --
 # 🧪 Test Case Table
