@@ -28,9 +28,7 @@ This file contains test data and scenarios for various features of the project, 
 | Login         | Jane Smith    | [user2@test.com](mailto:user2@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
 | Login         | Mike Johnson  | [user3@test.com](mailto:user3@test.com)     | TestPass123 | User | Successfully logged in | Positive test case |
 
----
-
-## **Admin User Accounts**
+### **Admin User Accounts**
 | **Test Scenario** | **Full Name**        | **Email**                                                 | **Password** | **Role** | **Expected Result**    | **Notes**          |
 | ----------------- | -------------------- | --------------------------------------------------------- | ------------ | -------- | ---------------------- | ------------------ |
 | Login             | System Administrator | [admin@cleancity.com](mailto:admin@cleancity.com)         | AdminPass123 | Admin    | Successfully logged in | Positive test case |
