@@ -72,15 +72,13 @@
 
 ### **3. Accessibility Test Cases**
 
-| TC (number) | Feature | Objective | Expected Result | Actual Result | Status | Risk Link |
-|--------------|----------|------------|----------------|----------------|---------|-----------|
-| TC No. | Feature        | Objective                  | Expected Result                  | Actual Result                                     | Status     | Risk Link |
-| -----: | -------------- | -------------------------- | -------------------------------- | ------------------------------------------------- | ---------- | --------- |
-|  TC017 | Awareness Page | Screen reader reads images | Images have descriptive alt text | `alt` attribute missing for awareness page images | ❌ **Fail** | R010      |
+| TC No.    | Feature        | Objective                                | Expected Result                                                 | Actual Result                                                             | Status | Risk Link |
+| :-------- | :------------- | :--------------------------------------- | :-------------------------------------------------------------- | :------------------------------------------------------------------------ | :----- | :-------- |
+| **TC017** | Awareness Page | Screen reader reads images               | Images have descriptive alt text                                | `alt` attribute missing for awareness page images                         | ❌ Fail | R010      |
+| **TC018** | Forms          | Keyboard navigation on registration form | All fields accessible and focusable using **Tab** and **Enter** | Tabbing works smoothly and Enter button functions correctly on login page | ✅ Pass | R010      |
+| **TC019** | Forms          | Color contrast check                     | Meets WCAG 2.1 AA standards (contrast ratio ≥ 4.5:1)            | Text readable; no low contrast detected                                   | ✅ Pass | R010      |
+| **TC020** | Buttons        | Minimum touch target size                | Buttons are ≥ 44x44px on mobile                                 | Register: 80x48 ✅, Login: 76x45 ✅, Comment: 50x44 ✅                       | ✅ Pass | R010      |
 
-| TC018 | Forms | Keyboard navigation on registration form | All fields accessible and focusable | TBD | TBD | R010 |
-| TC019 | Forms | Color contrast check | Meets WCAG 2.1 AA standards | TBD | TBD | R010 |
-| TC020 | Buttons | Minimum touch target size | Buttons are ≥44x44px on mobile | TBD | TBD | R010 |
 
 ---
 4. CROSS ROWSER COMPATABILITY TESTING
