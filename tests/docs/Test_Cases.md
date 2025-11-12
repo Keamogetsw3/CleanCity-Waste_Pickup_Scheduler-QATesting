@@ -29,8 +29,14 @@
 | TC-006      | Login with valid credentials             | Login successful                      | R-001      |
 | TC-007      | Login with invalid password              | Error: "Invalid email or password"    | R-001      |
 | TC-008      | Login with non-existent user             | Error: "Invalid email or password"    | R-001      |
-----
-### 1.3 User Session Management (localStorage)
+---
+### 1.3 Logout Test Cases
+| Test Case ID | Objective                                       | Expected Result                                               | Risk ID |
+|--------------|-------------------------------------------------|---------------------------------------------------------------|---------|
+| TC-009  | Verify user can successfully log out            | User is logged out and redirected to the Home page           | R001    |
+
+---
+### 1.4 User Session Management (localStorage)
 
 
 
