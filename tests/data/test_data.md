@@ -164,14 +164,15 @@ This file contains test data and scenarios for various features of the project, 
 
 #### **Pickup Scheduling Form**
 
-| Test Case ID | Test Scenario                     | Full Name           | Email         | Location                       | Waste Type             |    Date    | Instructions     |
-|--------------|----------------------------------|-------------------|----------------|---------------------------------------|-------------------|
-| TC-023      | Valid pickup request                       |   |    |                 |  |
-| TC-024      | Invalid pickup request  (invalid data)     |  |   |   |  |
-| TC-025      | Invalid pickup request  (Yesterday’s date) |  |    |   |  |
-| TC-025      | Invalid pickup request  (empty Waste Type) | |   |   |  |
-| TC-025      | Invalid pickup request  (empty Quantity) | |   |   |  |
-| TC-025      | Invalid pickup request  (Very long text (>200 chars)) | |   |   |  |
+| Test Case ID | Test Scenario                                   | Full Name    | Email                  | Location | Waste Type | Date       | Instructions                                                                 |
+|--------------|-------------------------------------------------|--------------|------------------------|---------|------------|-----------|----------------------------------------------------------------------------|
+| TC-023       | Valid pickup request                             |  Check User        |                        |         |            |    |                                                                            |
+| TC-024       | Invalid pickup request (invalid data)           |  Check User |                        |         |            |           |                                                                            |
+| TC-025       | Invalid pickup request (Yesterday’s date)       |  Check User |                        |         |            |           |                                                                            |
+| TC-026       | Invalid pickup request (empty Waste Type)       |   Check User   |                        |         |            |           |                                                                            |
+| TC-027       | Invalid pickup request (empty Quantity)         |  Check User |                        |         |            |           |                                                                            |
+| TC-028       | Invalid pickup request (Very long text >200 chars) |  Check User |                        |         |            |           |                                                                            |
+
 
 
 
