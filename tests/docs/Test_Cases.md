@@ -32,13 +32,7 @@
 
 
 
-### 🔐 Login Test Cases
 
-| Test Case ID | Objective                         | Expected Result                   | Actual Result                           | Status   | Risk Link |
-|--------------:|-----------------------------------|-----------------------------------|-----------------------------------------|-----------|------------|
-| TC-006       | Login with valid credentials       | Login successful                  | Successfully logged in                  | ✅ Pass   | R003       |
-| TC-007       | Login with invalid password        | Error: "Invalid email or password"| Error displayed as expected             | ✅ Pass   | R003       |
-| TC-008       | Login with non-existent user       | Error: "Invalid email or password"| Error displayed as expected             | ✅ Pass   | R003       |
 
 
 
