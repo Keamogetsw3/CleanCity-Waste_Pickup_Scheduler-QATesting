@@ -34,6 +34,8 @@
 | Test Case ID | Objective                                       | Expected Result                                               | Risk ID |
 |--------------|-------------------------------------------------|---------------------------------------------------------------|---------|
 | TC-009  | Verify user can successfully log out            | User is logged out and redirected to the Home page           | R001    |
+| TC-010  | Verify user cannot access dashboard after logout    | Attempting to access dashboard redirects to login page        | R001    |
+
 
 ---
 ### 1.4 User Session Management (localStorage)
