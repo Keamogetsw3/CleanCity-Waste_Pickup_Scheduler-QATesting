@@ -113,13 +113,13 @@ The purpose of this report is to validate that the application meets its functio
 
 --
 
-###
+### Table 4.2  Request Management
 | Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
 | ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
 | TC-030  | Verify the system displays the user’s pickup request history.              | Functional    | User can view all past and current pickup requests with details.    | |    | —             | —            | |  |
 | TC-031   | Verify completed and cancelled requests appear in history.                 | Functional    | Completed and cancelled requests are shown correctly.               ||  |  | | | 2025-11-13 |
 | TC-032   | Verify user can cancel a pending pickup request.                           | Functional    | Pending request changes status to “Cancelled.”                      |   |  | —             | —            | | 2025-11-13 |
-| TC-033  | Verify completed or cancelled requests cannot be cancelled again.          | Functional    | System prevents double cancellation.                                | As expected – warning message displayed.                |     | —             | —            | | 2025-11-13 |
+| TC-033  | Verify completed or cancelled requests cannot be cancelled again.          | Functional    | System prevents double cancellation.                                | |     | —             | —            | | 2025-11-13 |
 | TC-034   | Verify modification of pickup details at least 24 hours before schedule.   | Functional    | User can update details successfully.                               |  |       | —             | —            | | 2025-11-13 |
 | TC-035 | Verify modification not allowed within 24 hours of scheduled time.         | Functional    | System prevents modification and shows warning.                     |    |   |  | | | 2025-11-13 |
 | TC-036   | Verify system displays correct request status for each pickup.             | Functional    | Status correctly shows Pending, Confirmed, Completed, or Cancelled. | |        | —             | —            | Keamogetswe | 2025-11-13 |
