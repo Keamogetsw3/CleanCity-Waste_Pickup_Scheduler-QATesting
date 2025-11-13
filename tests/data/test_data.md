@@ -174,14 +174,6 @@ This file contains test data and scenarios for various features of the project, 
 | TC-028       | Invalid pickup request (Very long text >200 chars) | Check User | checkuser@email.com | Nairobi | General   | Tomorrow’s date (e.g., **2025-11-14**) | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...    |
 
 
-
-
-
-| **Data Type**    | **Date**                                | **Waste Type** | **Quantity** | **Instructions**                                                                                                                                                  |
-| ---------------- | --------------------------------------- | -------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Valid Data**   | Tomorrow’s date (e.g., **2025-11-13**)  | General        | Medium       | “Please ring doorbell”                                                                                                                                            |
-| **Invalid Data** | Yesterday’s date (e.g., **2025-11-11**) | *(empty)*      | *(empty)*    | Very long text (>200 chars), e.g. “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...” |
-
 ### **Boundary Testing Data**
 
 #### **Date Boundaries**
