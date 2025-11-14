@@ -19,7 +19,7 @@ This document provides a summary of all defects identified during manual and aut
 
 ### 🐞 BUG-001
 **Title:** Profile shows email username instead of Full Name after registration  
-**GitHub Link:** #28  
+**GitHub Link:** D-001 
 **Requirement Affected:** User Registration – Profile Display  
 **Severity:** Comestic  
 **Environment:** Development, Google Chrome, Windows 10  
@@ -46,7 +46,7 @@ The profile page displays the **username derived from the email** instead of the
 
 ### 🐞 BUG-002  
 **Title:** Existing user can log in with a different password than the one used during registration  
-**GitHub Link:** [#31](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)  
+**GitHub Link:** [D-002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)  
 **Requirement Affected:** User Login – Authentication  
 **Severity:** Critical  
 **Environment:** Development, Google Chrome, Windows 10  
@@ -73,7 +73,7 @@ The system allows the user to log in even with a password different from the one
 
 ### 🐞 BUG-003  
 **Title:** System allows login with unregistered credentials  
-**GitHub Link:** [#32](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)  
+**GitHub Link:** [D-003](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)  
 **Requirement Affected:** User Login – Authentication Validation  
 **Severity:** Critical  
 **Environment:** Development, Google Chrome, Windows 10  
@@ -100,7 +100,7 @@ The system allows login and grants access even though the credentials are not re
 
 ### 🐞 BUG-004  
 **Title:** Pick-up request submitted without user registration  
-**GitHub Link:** [#33](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)  
+**GitHub Link:** [D-004](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)  
 **Requirement Affected:** Pick-up Request – User Authentication  
 **Severity:** High  
 **Environment:** Development, Google Chrome, Windows 10  
@@ -123,7 +123,7 @@ The pick-up request is successfully submitted without any authentication.
 
 ### 🐞 BUG-005
 **Title:** The pickup is scheduled even with invalid date 
-**GitHub Link:** #—  
+**GitHub Link:** D-005 
 **Requirement Affected:** Pickup Scheduling – Date Validation  
 **Severity:** Medium  
 **Environment:** Development, Google Chrome, Windows 10  
@@ -159,7 +159,7 @@ The system **accepts the request with a past date**, allowing an invalid pickup 
 # 🐞 BUG-006
 
 **Title:** System allows submission of pickup request with instructions exceeding 200 characters  
-**GitHub Link:** [Issue #41](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41) 
+**GitHub Link:** [D-006](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41) 
 **Requirement Affected:** Pickup Request Input Validation  
 **Severity:** Medium  
 **Environment:** Development, Google Chrome, Windows 10  
@@ -182,7 +182,7 @@ The pickup request is successfully submitted with the full text exceeding 200 ch
 ---
 ### 🐞 BUG-007
 **Title:** System allows scheduling multiple pickups for the same date  
-**GitHub Link:** [Issue #42](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)  
+**GitHub Link:** [D-007](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)  
 **Requirement Affected:** Pickup Scheduling – Prevent Duplicate Dates  
 **Severity:** Medium  
 **Environment:** Development, Google Chrome, Windows 10  
@@ -226,4 +226,45 @@ The layout should adapt proportionally. The menu should collapse into a hamburge
 
 #### Actual Result 
 Menu bar expands uncontrollably, blocking all other content on small window sizes.
+
+---
+
+### 🐞 BUG-009  
+**Title:** Low-contrast text fails WCAG 2.1 AA contrast requirements  
+**GitHub Link:[D-009](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) 
+**Requirement Affected:** Accessibility – WCAG 2.1 AA 
+**Severity:** Major  
+**Environment:** (Lighthouse Audit) Development, Google Chrome, Windows 10   
+**Type:** Non-Functional – Accessibility / Usability  
+
+---
+
+#### Summary
+The Lighthouse Accessibility audit identifies several UI elements with insufficient contrast between text and background colors. This makes text difficult to read for many users and violates WCAG 2.1 AA contrast standards (minimum 4.5:1 for normal text).
+
+---
+
+#### Steps to Reproduce
+1. Open the application in Chrome.  
+2. Open **DevTools → Lighthouse**.  
+3. Run an **Accessibility** audit.  
+4. Scroll to the **Contrast** section.  
+5. Observe the list of elements flagged as failing contrast requirements.
+
+---
+
+#### Expected Result
+All text and UI elements should meet WCAG 2.1 AA contrast ratios:  
+- Normal text ≥ **4.5:1**  
+- Large text / UI components ≥ **3:1**  
+Text should remain clearly readable against its background under all conditions.
+
+---
+
+#### Actual Result
+Lighthouse reports: *“Background and foreground colors do not have a sufficient contrast ratio.”*  
+
+Manual checks were done to confirm that the contrast ratios for these elements fall below WCAG AA thresholds.
+
+---
 
