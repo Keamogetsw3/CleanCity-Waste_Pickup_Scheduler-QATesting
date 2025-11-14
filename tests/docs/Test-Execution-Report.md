@@ -60,8 +60,8 @@ The purpose of this report is to validate that the application meets its functio
 |Test Case ID      | Test Description                                      | Test Type  | Expected Result                                         | Actual Result | Status | Defect ID | Severity | Tester | Date       |
 |---------|------------------------------------------------------|-----------|--------------------------------------------------------|---------------|--------|-----------|---------|--------|-----------|
 | TC-023  | Valid pickup request - Verify system accepts submission and displays confirmation message (“Pickup scheduled successfully”)   | Functional | Pickup request is successfully created | Confirmation message displayed   |    Pass ✅   | —  | —  | Sally Trizer  | 2025-11-12 |
-| TC-024  | Invalid pickup request (no data)                     | Functional | System shows validation errors for empty fields       |               |        |           |         |        |           |
-| TC-025  | Invalid pickup request (Yesterday’s date)            | Functional | System does not allow scheduling for past date        |               |        |           |         |        |           |
+| TC-024  | Invalid pickup request (no data)                     | Functional | System shows validation errors for empty fields    | System shows validation errors for empty fields  |   Pass ✅ |  —  |  —  |   Keamogetswe   | 2025-11-13 |
+| TC-025  | Invalid pickup request (Yesterday’s date)            | Functional | System does not allow scheduling for past date   | Confirmation message displayed  | Fail ❌ | [D-005](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/)       |  Medium  |    Keamogetswe      |    2025-11-13       |
 | TC-026  | Invalid pickup request (empty Waste Type)            | Functional | System shows error indicating Waste Type is required |               |        |           |         |        |           |
 | TC-027  | Invalid pickup request (empty Location)              | Functional | System shows error indicating Location is required   |               |        |           |         |        |           |
 | TC-028  | Invalid pickup request (Very long text >200 chars)   | Functional | System truncates input or shows error for long text  |               |        |           |         |        |           |
@@ -82,24 +82,3 @@ The purpose of this report is to validate that the application meets its functio
 | TC-037 | Verify request status updates automatically after completion/cancellation. | Functional    | Status updates dynamically after change.                            |  | |   |          |  | 2025-11-13 |
 
 
-# 🧪 Test Case Table
-
-| Test Case ID | Test Description                            | Test Type   | Expected Result                                | Actual Result                                  | Status  | Defect ID | Severity | Tester        | Date       | 
-|---------------|---------------------------------------------|--------------|------------------------------------------------|------------------------------------------------|----------|------------|-----------|----------------|------------|
-| TC001         | Verify registration with valid credentials  | Functional   | User should be registered successfully          | User successfully registered                   | Passed   | —          | —         | Keamogetswe | 2025-11-10 |
-| TC002         | Verify registration with invalid email      | Functional   | System should ask for valid email             | System asking for correct email | Passed   | —          | —         | Keamogetswe| 2025-11-10 |
-| TC003         | Verify registration with empty namefield     | Functional   | System should ask for Name             | System asked for Full name | Passed   | —          | —         | Keamogetswe| 2025-11-10 |
-| TC003         | Verify login with valid password            | Functional   | User should be logged in successfully           | User successfully logged in                    | Passed   | —          | —         | Keamogetswe M | 2025-11-10 |
-| TC004         | Verify registration with valid credentials  | Functional   | User should be registered successfully          | User successfully registered                   | Passed   | —          | —         | Keamogetswe M | 2025-11-10 |
-| TC005         | Verify login with valid password            | Functional   | User should be logged in successfully           | User successfully logged in                    | Passed   | —          | —         | Keamogetswe M | 2025-11-10 |
-
----
-
-
-
-## Test Case Execution Report 
-
-| Test Case ID | Test Description | Test Type | Status | Defect ID | Severity | Tester | Date | Remarks |
-|---------------|----------------|------------------|------------|----------|------------|-----------|---------|--------|
-| TC001 | Verify registration with valid credentials | Functional | Passed | — | — | Keamogetswe M | 2025-11-10 | Succefully registered |
-| TC003 |  Verify login with valid password | Functional | Passed | — | — | Keamogetswe M | 2025-11-10 | Successfully logged in |
