@@ -179,4 +179,26 @@ The system should either truncate the instructions to 200 characters or display 
 ## Actual Result
 The pickup request is successfully submitted with the full text exceeding 200 characters.  
 
+---
+### 🐞 BUG-007
+**Title:** System allows scheduling multiple pickups for the same date  
+**GitHub Link:** [Issue #42](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)  
+**Requirement Affected:** Pickup Scheduling – Prevent Duplicate Dates  
+**Severity:** Medium  
+**Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The system is supposed to prevent scheduling multiple pickups on the same date. However, users can currently add two or more pickups with the same date, which may lead to operational confusion and duplicate service requests.
+
+#### Steps to Reproduce
+1. Log in to the system as a user.  
+2. Schedule a pickup for a specific date (e.g., `2025-11-15`).  
+3. Attempt to schedule another pickup for the **same date**.  
+4. Observe that the system allows the second pickup to be created.  
+
+#### Expected Result
+The system should **prevent creating duplicate pickups** for the same date and display an error or validation message.
+
+#### Actual Result
+The system allows **two or more pickups** to be scheduled on the same date.
 
