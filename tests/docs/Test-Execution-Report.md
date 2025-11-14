@@ -88,6 +88,17 @@ The purpose of this report is to validate that the application meets its functio
 | TC0  | Verify the system displays correctly on tablet screens (768px to 1024px) | Non-Functional | ayout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur  | |  | — | —  | |  |
 | TC0  | Verify the system displays correctly on mobile phones (320px to 767px) | Non-Functional | Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur | |  | — | —  | |  |
 
+
+#### Table 4.2: Accessibility (📱 User Interface Requirements )
+| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
+| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
+| TC0  |  | Non-Functional |  | |  | — | —  | |  |
+| TC0  |  | Non-Functional |  | |  | — | —  | |  |
+| TC0  |  | Non-Functional |  | |  | — | —  | |  |
+| TC0  |  | Non-Functional |  | |  | — | —  | |  |
+
+
+
 ----
 
 #### Table 4. Response Time (🚀 Performance Requirements)
