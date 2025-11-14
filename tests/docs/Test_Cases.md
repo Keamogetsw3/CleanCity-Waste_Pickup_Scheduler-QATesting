@@ -73,7 +73,7 @@
 | TC-026  | Invalid pickup request (empty Waste Type)            | System shows error indicating Waste Type is required | R-002   |
 | TC-027  | Invalid pickup request (empty Location)              | System shows error indicating Location is required   | R-002   |
 | TC-028  | Invalid pickup request (Very long text >200 chars)   | System truncates input or shows error for long text  | R-002   |
-| FC-029  | The system shall prevent scheduling multiple pickups for the same date | System prevents creating duplicate pickups for the same date | R-002   |
+| TC-029  | The system shall prevent scheduling multiple pickups for the same date | System prevents creating duplicate pickups for the same date | R-002   |
 
 ### 2.2 Request Management Test Cases
 | Test Case ID    | Objective                                                                                                     | Expected Result                                                                                       | Risk ID   |
@@ -110,12 +110,33 @@ This section focuses on testing the system's non-functional requirements, which 
 
 ------
 ### 📱 User Interface Requirements
+---
+### Table .1: Test cases for Responsive Design
+| Test Case ID | Feature | Objective | Expected Result | Risk Link  |
+|--------------|----------|------------|----------------|----------------|
+|TC-0 |  | |  |
 
 ---
 ### 🚀 Performance Requirements
 
-
+| Test Case ID | Feature | Objective | Expected Result | Risk Link  |
+|--------------|----------|------------|----------------|----------------|
+| |  | |  |
 ------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 ## Functional Test Cases - Boundary and Edge Case Test Cases
