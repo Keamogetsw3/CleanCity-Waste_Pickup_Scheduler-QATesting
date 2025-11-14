@@ -115,6 +115,9 @@ This section focuses on testing the system's non-functional requirements, which 
 | Test Case ID |  Objective | Expected Result | Risk Link  |
 |--------------|------------|----------------|----------------|
 |TC-0 | Verify responsiveness when resizing the browser window dynamically | Layout adapts in real-time without breaking or losing functionality | R-008 |
+|TC-0 | Verify the system displays correctly on desktop screens (1920×1080 and above)| All UI elements render properly and no horizontal scrolling occurs| R-008 |
+|TC-0 | Verify the system displays correctly on tablet screens (768px to 1024px) | Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur | R-008 |
+|TC-0 | Verify the system displays correctly on mobile phones (320px to 767px)| Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur| R-008 |
 
 
 ### Table .1: Test cases for Responsive Design
