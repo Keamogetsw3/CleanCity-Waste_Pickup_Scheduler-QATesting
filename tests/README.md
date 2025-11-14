@@ -11,10 +11,12 @@ The purpose of the **tests** folder is to:
 
 ---
 📂 Folder Structure
+## 📂 Folder Structure
+
 /tests
 │
 ├── data/                                   # Contains all test data files
-│   ├── test_data.md                        # Valid, invalid, boundary & edge case test data
+│   └── test_data.md                        # Valid, invalid, boundary & edge case test data
 │
 ├── docs/                                   # Full test documentation library
 │   ├── Bug-Report-Summary.md               # Summary of all logged bugs grouped by severity & status
@@ -27,10 +29,11 @@ The purpose of the **tests** folder is to:
 │   └── Final-Test-Report.md                # Final summary report at test cycle completion
 │
 ├── Scripts/                                # Automated scripts for testing or test data preparation
-│   ├── 
-│   ├── 
-│   ├── 
-│   └── 
+│   ├── setup_test_env.sh                   # Script to initialize test environment
+│   ├── run_tests.py                        # Script to execute automated tests
+│   ├── generate_summary.py                 # Script to generate summary reports
+│   └── cleanup.sh                          # Script to clean environment after tests
 │
 ├── Final-Test-Report.pdf                   # Exported PDF version of the final full test report
 └── README.md                               # Documentation file explaining the test folder structure
+
