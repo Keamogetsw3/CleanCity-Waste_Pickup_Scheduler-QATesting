@@ -127,7 +127,7 @@ This section focuses on testing the system's non-functional requirements, which 
 |TC-0 |Verify zooming to 200% does not break layout | Page remains usable and responsive at 200% zoom | R-008 |
 |TC-0 |Verift that the system support keyboard navigation | All fields accessible and focusable using **Tab** and **Enter** | R-008 |
 |TC-0 |Verify all meaningful images have descriptive alt text | Images have descriptive alt text | R-008 |
-
+|TC-0 |Verify Screen Reader Announces Form Field Labels Correctly| Screen reader announce each field correctly| R-008 |
 
 ### Table .2: Test cases for Accessibility (Lighthouse - Dev Tools )
 | Test Case ID | Objective | Expected Result | Risk Link  |
