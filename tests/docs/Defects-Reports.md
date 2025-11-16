@@ -6,44 +6,34 @@ gress / Resolved / Closed | [Link](#) |
 # 🐞 Defect Log – CleanCity Project
 
 ## **Functional Test Defects**
-
-| ID     | Issue Title                                                           | Severity  | Risk ID | Status | GitHub Link | Test Case ID |
-|--------|------------------------------------------------------------------------|-----------|---------|--------|-------------|---------------|
-| D-001  | Profile displays email instead of full name                            | Cosmetic  | R002    | Open   | Issue #28   | TC-010        |
-| D-002  | Existing user can log in with completely invalid password              | Critical  | R001    | Open   | Issue #31   | TC-003        |
-| D-003  | System allows login using unregistered credentials                     | Critical  | R001    | Open   | Issue #32   | TC-004        |
-| D-004  | Pickup request can be submitted without user registration              | Major     | R001    | Open   | Issue #33   | TC-021        |
-| D-005  | Pickup can be scheduled with an invalid date                           | Medium    | R003    | Open   | Issue #34   | TC-025        |
-| D-006  | Pickup request accepts instructions longer than 200 characters         | Medium    | R003    | Open   | Issue #41   | TC-028        |
-| D-007  | System allows multiple pickups to be scheduled for the same date       | Medium    | R003    | Open   | Issue #42   | TC-029        |
-
-
----
-
-## **Non-Functional Test Defects**
-
-| ID     | Issue Title                                                                             | Severity | Risk ID | Status | GitHub Link |
-|--------|-------------------------------------------------------------------------------------------|----------|---------|--------|-------------|
-| D-008  | Menu bar expands excessively on window resize, hiding all content                         | Medium   | R008    | Open   | Issue #55   |
-| D-009  | Low-contrast text fails WCAG 2.1 AA accessibility requirement                             | Major    | R008    | Open   | Issue #56   |
+| ID    | Issue Title                                                | Severity | Risk ID | Status | GitHub Link | Test Case ID |
+| ----- | ---------------------------------------------------------- | -------- | ------- | ------ | ----------- | ------------ |
+| D-001 | Profile shows email instead of full name                   | Cosmetic   | R00     | Open   | [Issue #28](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/28)   | TC-       |
+| D-002 | Existing user can login with a completely invalid password | Critical | R001    | Open   | [Issue #31](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31) | TC-       |
+| D-003 | System allows login with unregistered credentials          | Critical | R001    | Open   | [Issue #32](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)   | TC-       |
+| D-004 | Pick-up request submitted without user registration        | Major    | R001    | Open   | [Issue #33](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)   | TC-       |
+| D-005 | The pickup is scheduled even with invalid date             | Medium    | R003    | Open   | [Issue #34](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/34) | TC-025       |
+| D-006 | System allows submission of pickup request with instructions exceeding 200 characters             | Medium    | R003    | Open   | [Issue #41](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41) | TC-028       |
+| D-007 | System allows scheduling multiple pickups for the same date   | Medium    | R003    | Open   | [Issue #42](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42) | TC-029       |
 
 
----
+## Non-Functional Test Defects
 
-## **Accessibility Test Defects**
+| ID   | Issue Title                               | Severity  | Risk ID | Status             | GitHub Link |
+|------|-------------------------------------------|----------|--------|------------------|------------|
+| D-008 | Menu bar expands excessively when resizing window, hiding all other content | Medium    | R008    | Open   | [Issue #55](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | TC-000  |
+| D-009 | Low Contrast Text Fails WCAG 2.1 AA | Major| R008 | Open| [Issue #56](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/56) |
 
-| ID     | Issue Title                                   | Severity | Risk ID | Status        | GitHub Link |
-|--------|-----------------------------------------------|----------|---------|----------------|-------------|
-| D-010  | Missing alt text for multiple UI images       | Major    | R006    | Open           | Issue #57   |
-| D-011  | Buttons not accessible through keyboard tab   | Major    | R007    | In Progress    | Issue #58   |
+## Accessibility Test Defects
 
+| ID   | Issue Title                               | Severity  | Risk ID | Status             | GitHub Link |
+|------|-------------------------------------------|----------|--------|------------------|------------|
+| || Major    | R006   | Open / In Progress / Resolved / Closed | [Link](#) |
+| |  | Major | R007 | Open / In Progress / Resolved / Closed | [Link](#) |
 
----
+## Cross-Browser Compatibility Test Defects
 
-## **Cross-Browser Compatibility Defects**
-
-| ID     | Issue Title                                            | Severity | Risk ID | Status    | GitHub Link |
-|--------|--------------------------------------------------------|----------|---------|-----------|-------------|
-| D-012  | Dropdown misaligned on Firefox                         | Minor    | R008    | Open      | Issue #59   |
-| D-013  | Map component not loading on Safari                    | Major    | R009    | Open      | Issue #60   |
-
+| ID   | Issue Title                               | Severity  | Risk ID | Status             | GitHub Link |
+|------|-------------------------------------------|----------|--------|------------------|------------|
+|  |     | Minor    | R008   | Open / In Progress / Resolved / Closed | [Link](#) |
+|  |    | Major    | R009   | Open / In Pro
