@@ -163,14 +163,4 @@ The purpose of this report is to validate that the application meets its functio
 | TC- | Verify system works on Microsoft Edge (latest 2 versions) | Non-Functional | Application functions correctly without layout issues, errors, or crashes | Application works as expected | Pass ✅ | — | — | Sally Trizer | 2025-11-12 |
 
 
-| TC No. | Feature              | Objective                                 | Expected Result                                      | Actual Result                                                      | Status | Risk Link |
-|--------|-----------------------|--------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------|--------|-----------|
-| TC021  | Registration          | Register new user                         | Account created successfully                         | Successfully registered new user in Chrome                         | ✅ Pass | R002      |
-| TC022  | Login                 | Login with correct credentials            | Access granted                                       | Successfully logged in with correct password                       | ✅ Pass | R003      |
-| TC023  | Login                 | Login with wrong credentials              | Error message displayed                              | Error “Wrong password” displayed as expected                       | ✅ Pass | R003      |
-| TC024  | Login                 | Same credentials across all browsers      | Invalid email or wrong password message              | Failed to login — “Invalid email or wrong password”                | ❌ Fail | R003      |
-| TC025  | Dashboard Filters     | Filter by Status                          | Only requests with selected status display           | Requests filtered correctly by status                              | ✅ Pass | R002      |
-| TC026  | Dashboard Filters     | Filter by Location                        | Only requests in selected location display           | Requests filtered correctly by location                            | ✅ Pass | R002      |
-| TC027  | Pickup & Rescheduling | Verify rescheduling & pickup works        | Request should be successfully rescheduled/picked    | Function failed to reschedule/pickup request                       | ❌ Fail | R004      |
-| TC028  | Awareness Page        | Verify page loads and displays content    | Awareness page loads successfully                    | Awareness page displayed correctly with all content                | ✅ Pass | R005      |
 
