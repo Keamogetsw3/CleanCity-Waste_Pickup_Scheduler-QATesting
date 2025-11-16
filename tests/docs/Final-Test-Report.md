@@ -22,7 +22,25 @@ Manual and automated test cases were executed
 
 ---
 Executive Summary
-Test Strategy and Approach
+
+## Test Strategy and Approach
+The testing strategy for this project combines static analysis and dynamic analysis (functional testing and non-functional testing) to ensure comprehensive quality coverage.
+
+### 1. Static Analysis
+We used SonarQube to analyze HTML, CSS, and JavaScript code in order to identify quality issues, vulnerabilities, and duplications. SonarQube generated a report with 124 issues, including 1 Critical, 87 High, and 36 Minor severity issues. These findings helped prioritize code improvements before dynamic testing.
+
+### 2. Dynamic Analysis
+Dynamic testing was performed to validate that the system behaves correctly under different scenarios and meets both functional and non-functional requirements. It included the following:
+
+#### 2.1 Functional Testing
+Manual Testing was done to verify all functional requirements  and Automated Testing using Selenium were done to ensure consistent functionality.
+
+#### 2.2 Non-Functional Testing
+Manual Testing: Usability, accessibility, and cross-browser compatibility checks were conducted using test scenarios and checklists.
+Automated Testing: Performance, load, and response time tests were executed to ensure the system meets expected quality attributes.
+
+---
+
 Test Environment Details
 Test Execution Summary
 ---
