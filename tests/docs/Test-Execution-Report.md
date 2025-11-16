@@ -120,12 +120,31 @@ The purpose of this report is to validate that the application meets its functio
 
 ----
 
-#### Table 4. Response Time (🚀 Performance Requirements)
+#### Table 4. Response Time Test cases for Navigation
+#### Table 4. Response Time Test Cases for Navigation
+
+| Test Case ID | Objective                                                   | Test Type       | Expected Result                                                                 | Actual Result                                                                 | Status | Defect ID | Severity | Tester       | Date       |
+|--------------|-------------------------------------------------------------|------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------|--------|-----------|----------|--------------|------------|
+| TC-| Verify navigation menu is easy to understand                 | Non-Functional   | Navigation menu is clearly visible with descriptive labels                      | Navigation menu displays correctly and is easy to understand                 | Pass ✅   | —         | —        | Keamogetswe | 2025-11-16 |
+| TC-  | Verify navigation menu links work correctly                  | Non-Functional   | Each navigation link should redirect to the correct page                         | All navigation redirects function as expected                                | Pass ✅    | —         | —        |Keamogetswe | 2025-11-16 |
+| TC- | Verify system shows correct breadcrumbs on complex pages     | Non-Functional   | Breadcrumbs should display full, accurate page hierarchy                         | Breadcrumb shows only **"Profile"** when editing; hierarchy missing          | Fail ❌   | | Minor   | Keamogetswe | 2025-11-16 |
+| TC-   | Verify search bar visibility and relevant results functionality | Non-Functional | Search results and filters should update based on input                          | Search & filter **do nothing**; article list remains unchanged               | Fail ❌  | | Medium    | Keamogetswe | 2025-11-16 |
+
+
+
+
+
 | Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
 | ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
 
+
+#### Table 4. Response Time (🚀 Performance Requirements)
+| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
+| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
+| TC0  |  | Non-Functional |  | |  | — | —  | |  |
+| TC0  |  | Non-Functional |  | |  | — | —  | |  |
 
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
