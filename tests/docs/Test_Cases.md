@@ -177,16 +177,19 @@ This section focuses on testing the system's non-functional requirements, which 
 ---
 
 ### 🚀 Performance Requirements
-####
-
-| Test Case ID | Feature | Objective | Expected Result | Risk Link  |
-|--------------|----------|------------|----------------|----------------|
-| |  | |  |
+#### Response Time
 
 
 | Test Case ID | Feature | Objective | Expected Result | Risk Link  |
 |--------------|----------|------------|----------------|----------------|
 | |  | |  |
+
+#### Browser Compatibility
+| Test Case ID | Feature | Objective | Expected Result | Risk Link  |
+|--------------|----------|------------|----------------|----------------|
+| TC | Verify system works on Google Chrome (latest 2 versions) by performing core functionalities (login, form submission, navigation)| |  |
+| TC | Verify system works on Mozilla Firefox (latest 2 versions) by performing core functionalities (login, form submission, navigation)| |  |
+| TC | Verify system works on Microsoft Edge (latest 2 versions) by performing core functionalities (login, form submission, navigation)| |  |
 ------
 
 
