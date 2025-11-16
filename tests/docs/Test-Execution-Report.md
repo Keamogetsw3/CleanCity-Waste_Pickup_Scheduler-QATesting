@@ -71,29 +71,6 @@ The purpose of this report is to validate that the application meets its functio
 | TC036   | Verify system displays correct request status for each pickup.             | Functional    | Status correctly shows Pending, Confirmed, Completed, or Cancelled. | |        | —             | —            | Keamogetswe | 2025-11-13 |
 | TC037 | Verify request status updates automatically after completion/cancellation. | Functional    | Status updates dynamically after change.                            |  | |   |          |  | 2025-11-13 |
 ---
-# 📘 Accessibility Test Cases
-
-| TC No. | Feature         | Objective                          | Expected Result                                              | Actual Result                                                                   | Status | Risk Link |
-|--------|-----------------|--------------------------------------|--------------------------------------------------------------|----------------------------------------------------------------------------------|--------|-----------|
-| TC017  | Awareness Page  | Screen reader reads images          | Images have descriptive alt text                            | alt attribute missing for awareness page images                                 | ❌ Fail | R010      |
-| TC018  | Forms           | Keyboard navigation on registration | All fields accessible and focusable using Tab and Enter     | Tabbing works smoothly and Enter button functions correctly on login page       | ✅ Pass | R010      |
-| TC019  | Forms           | Color contrast check                | Meets WCAG 2.1 AA (contrast ratio ≥ 4.5:1)                  | Text readable; no low contrast detected                                         | ✅ Pass | R010      |
-| TC020  | Buttons         | Minimum touch target size           | Buttons are ≥ 44x44px on mobile                             | Register: 80x48 ✅, Login: 76x45 ✅, Comment: 50x44 ✅                            | ✅ Pass | R010      |
-
----
-
-# 🌐 Cross-Browser Compatibility Testing
-
-| TC No. | Feature              | Objective                                 | Expected Result                                      | Actual Result                                                      | Status | Risk Link |
-|--------|-----------------------|--------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------|--------|-----------|
-| TC021  | Registration          | Register new user                         | Account created successfully                         | Successfully registered new user in Chrome                         | ✅ Pass | R002      |
-| TC022  | Login                 | Login with correct credentials            | Access granted                                       | Successfully logged in with correct password                       | ✅ Pass | R003      |
-| TC023  | Login                 | Login with wrong credentials              | Error message displayed                              | Error “Wrong password” displayed as expected                       | ✅ Pass | R003      |
-| TC024  | Login                 | Same credentials across all browsers      | Invalid email or wrong password message              | Failed to login — “Invalid email or wrong password”                | ❌ Fail | R003      |
-| TC025  | Dashboard Filters     | Filter by Status                          | Only requests with selected status display           | Requests filtered correctly by status                              | ✅ Pass | R002      |
-| TC026  | Dashboard Filters     | Filter by Location                        | Only requests in selected location display           | Requests filtered correctly by location                            | ✅ Pass | R002      |
-| TC027  | Pickup & Rescheduling | Verify rescheduling & pickup works        | Request should be successfully rescheduled/picked    | Function failed to reschedule/pickup request                       | ❌ Fail | R004      |
-| TC028  | Awareness Page        | Verify page loads and displays content    | Awareness page loads successfully                    | Awareness page displayed correctly with all content                | ✅ Pass | R005      |
 
 ---
 
@@ -152,3 +129,20 @@ The purpose of this report is to validate that the application meets its functio
 
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
 | TC0  |  | Non-Functional |  | |  | — | —  | |  |
+
+
+
+
+# 🌐 Cross-Browser Compatibility Testing
+
+| TC No. | Feature              | Objective                                 | Expected Result                                      | Actual Result                                                      | Status | Risk Link |
+|--------|-----------------------|--------------------------------------------|------------------------------------------------------|---------------------------------------------------------------------|--------|-----------|
+| TC021  | Registration          | Register new user                         | Account created successfully                         | Successfully registered new user in Chrome                         | ✅ Pass | R002      |
+| TC022  | Login                 | Login with correct credentials            | Access granted                                       | Successfully logged in with correct password                       | ✅ Pass | R003      |
+| TC023  | Login                 | Login with wrong credentials              | Error message displayed                              | Error “Wrong password” displayed as expected                       | ✅ Pass | R003      |
+| TC024  | Login                 | Same credentials across all browsers      | Invalid email or wrong password message              | Failed to login — “Invalid email or wrong password”                | ❌ Fail | R003      |
+| TC025  | Dashboard Filters     | Filter by Status                          | Only requests with selected status display           | Requests filtered correctly by status                              | ✅ Pass | R002      |
+| TC026  | Dashboard Filters     | Filter by Location                        | Only requests in selected location display           | Requests filtered correctly by location                            | ✅ Pass | R002      |
+| TC027  | Pickup & Rescheduling | Verify rescheduling & pickup works        | Request should be successfully rescheduled/picked    | Function failed to reschedule/pickup request                       | ❌ Fail | R004      |
+| TC028  | Awareness Page        | Verify page loads and displays content    | Awareness page loads successfully                    | Awareness page displayed correctly with all content                | ✅ Pass | R005      |
+
