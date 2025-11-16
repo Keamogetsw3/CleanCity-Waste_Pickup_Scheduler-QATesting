@@ -381,4 +381,7 @@ A confirmation email should be sent immediately.
 
 ### Actual Result  
 No email is received.
-
+---
+## 🐞 BUG-017  : to be added by Keamo
+---
+## 🐞 BUG-018  : to be added by Keamo
