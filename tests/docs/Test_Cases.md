@@ -30,7 +30,7 @@
 | TC-007       | Register user with invalid email  | Validation error displayed   | R-001   | Negative Test Case |
 | TC-008       | Register user with empty name     | Validation error displayed   | R-001   | Negative Test Case |
 | TC-009       | Register user with empty email    | Validation error displayed   | R-001   | Negative Test Case |
-| TC-009       | Register user with empty password | Validation error displayed   | R-001   | Negative Test Case |
+| TC-010       | Register user with empty password | Validation error displayed   | R-001   | Negative Test Case |
 
 ---
 #### 1.2 Login Test Cases
