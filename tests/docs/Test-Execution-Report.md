@@ -86,6 +86,20 @@ The purpose of this report is to validate that the application meets its functio
 | TC043        | Verify system displays correct request status for each pickup.             | Manual    | Status correctly shows Pending, Confirmed, Completed, or Cancelled. | Pickup status are not listed or visible                                                             | Fail ❌ | D000      | Major    | Sally Trizer   | 2025-11-12 |
 | TC044        | Verify request status updates automatically after completion/cancellation. | Manual    | Status updates dynamically after change.                            |        Pickup status are not listed or visible  | Fail ❌ | D000 | Major    | Sally Trizer   | 2025-11-12 |
 
+---
+
+#### Table 2.3: 📋 Request Tracking
+
+| Test Case ID | Objective                                                                     | Test Type | Expected Result                                                                              | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | ----------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC045        | Verify that the system provides real-time status updates for pickup requests. | Manual    | Status of each pickup request updates dynamically without requiring page refresh.            |               |    Fail ❌    | —         | —        |     Sally Trizer   |  2025-11-16 |
+| TC046        | Verify that users receive notifications for pickup request status changes.    | Manual    | User receives notifications (email, SMS, or in-app) whenever the status of a pickup changes. |               |    Fail ❌    | —         | —        |     Sally Trizer   | 2025-11-16  |
+| TC047        | Verify that users can add feedback after a pickup is completed.               | Manual    | Users can submit feedback, and the system stores it associated with the completed pickup.    |               |   Pass ✅      | —         | —        |    Sally Trizer   | 2025-11-16  |
+
+
+
+
+
 
 
 
@@ -170,8 +184,8 @@ The purpose of this report is to validate that the application meets its functio
 
 | Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
 | ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
-| TC0  |  | Non-Functional |  | |  | — | —  | |  |
+| TC0  |  | Manual |  | |  | — | —  | |  |
+| TC0  |  | Manual|  | |  | — | —  | |  |
 
 
 #### Table 4. Response Time (🚀 Performance Requirements)
