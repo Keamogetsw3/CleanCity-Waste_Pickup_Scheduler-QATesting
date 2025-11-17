@@ -170,11 +170,42 @@ The purpose of this report is to validate that the application meets its functio
 
 ---
 #### Table 6.2 User Management Test case execusion report
+| Test Case ID | Test Description                                  | Test Type | Expected Result                                                             | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | ------------------------------------------------- | --------- | --------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC074    | Verify that admins can view all registered users  | Manual    | Admin can successfully view a complete list of all registered system users  |               |        |           |          |        |      |
+| TC075    | Verify that admins can change user roles          | Manual    | Admin can update user roles and changes are saved and reflected immediately |               |        |           |          |        |      |
+| TC076    | Verify that admins can suspend or delete accounts | Manual    | Admin can suspend or delete user accounts and the system updates the status |               |        |           |          |        |      |
+| TC077    | Verify that system provides user activity reports | Manual    | Admin can view activity reports including logins, actions, and timestamps   |               |        |           |          |        |      |
+
 
 ---
-#### Table 6.3 Content ModerationTest case execusion report
+#### Table 6.3: Content Moderation Test case execusion report
+| Test Case ID | Test Description                                             | Test Type | Expected Result                                                                   | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | ------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC078    | Verify that admins can moderate community posts and comments | Manual    | Admin can view, review, and manage all posts/comments from the moderation panel   |               |        |           |          |        |      |
+| TC079   | Verify that admins can delete inappropriate content          | Manual    | Admin can successfully delete posts/comments and they no longer appear publicly   |               |        |           |          |        |      |
+| TC080  | Verify that users can flag/ report inappropriate content     | Manual    | Users can flag posts/comments and reports appear in the admin moderation queue    |               |        |           |          |        |      |
+| TC081  | Verify that admins can create announcements                  | Manual    | Admin can create announcements and they appear on the community/announcement page |               |        |           |          |        |      |
 
 ---
+### **7. 🔔 Notification System Requirements**
+---
+#### Table 7.1: System Notifications Test case execusion report
+| Test Case ID | Test Description                                                                                               | Test Type | Expected Result                                                              | Actual Result | Status | Defect ID | Severity | Tester | Date |
+| ------------ | -------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
+| TC082 | Verify that the system displays a notification bell with unread count                                          | Manual    | Notification bell is visible and shows the correct unread notification count |               |        |           |          |        |      |
+| TC083  | Verify that the system shows notifications for pickup updates, blogs, community interactions, and achievements | Manual    | All notification types appear correctly in the notification list             |               |        |           |          |        |      |
+| TC084 | Verify that users can mark notifications as read                                                               | Manual    | Selected notifications change to “read” state and unread counter updates     |               |        |           |          |        |      |
+| TC085 | Verify that the system provides a full notification history                                                    | Manual    | Notification history page displays past notifications in chronological order |               |        |           |          |        |      |
+
+
+---
+#### Table 6.3: Content Moderation Test case execusion report
+---
+#### Table 6.3: Content Moderation Test case execusion report
+---
+
+
 
 #### Table 1.4: User Session Management (localStorage) Test Cases
 | Test Case ID | Test Description                          | Test Type   | Expected Result                       | Actual Result                | Status  | Defect ID | Severity | Tester          | Date       |
