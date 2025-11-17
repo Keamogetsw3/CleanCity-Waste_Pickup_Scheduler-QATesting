@@ -75,16 +75,17 @@ The purpose of this report is to validate that the application meets its functio
 ---
 
 #### Table 2.2: 📋 Request Management
-| Test Case ID | Objective                                                   | Test Type | Expected Result                                               | Actual Result                                       | Status     | Defect ID | Severity | Tester | Date |
-| ---------------- | -------------------------------------------------------------------------- | ------------- | ------------------------------------------------------------------- | ------------------------------------------------------- | --------------- | ------------- | ------------ | ----------- | ---------- |
-| TC037  | Verify the system displays the user’s pickup request history.              | Functional    | User can view all past and current pickup requests with details.    | |    | —             | —            | |  |
-| TC038   | Verify completed and cancelled requests appear in history.                 | Functional    | Completed and cancelled requests are shown correctly.               ||  |  | | | 2025-11-13 |
-| TC039   | Verify user can cancel a pending pickup request.                           | Functional    | Pending request changes status to “Cancelled.”                      |   |  | —             | —            | | 2025-11-13 |
-| TC040  | Verify completed or cancelled requests cannot be cancelled again.          | Functional    | System prevents double cancellation.                                | |     | —             | —            | | 2025-11-13 |
-| TC041   | Verify modification of pickup details at least 24 hours before schedule.   | Functional    | User can update details successfully.                               |  |       | —             | —            | | 2025-11-13 |
-| TC042 | Verify modification not allowed within 24 hours of scheduled time.         | Functional    | System prevents modification and shows warning.                     |    |   |  | | | 2025-11-13 |
-| TC043  | Verify system displays correct request status for each pickup.             | Functional    | Status correctly shows Pending, Confirmed, Completed, or Cancelled. | |        | —             | —            | Keamogetswe | 2025-11-13 |
-| TC044 | Verify request status updates automatically after completion/cancellation. | Functional    | Status updates dynamically after change.                            |  | |   |          |  | 2025-11-13 |
+| Test Case ID | Objective                                                                  | Test Type | Expected Result                                                     | Actual Result                                                       | Status | Defect ID | Severity | Tester      | Date       |
+| ------------ | -------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------- | ------------------------------------------------------------------- | ------ | --------- | -------- | ----------- | ---------- |
+| TC037        | Verify the system displays the user’s pickup request history.              | Manual    | User can view all past and current pickup requests with details.    | User cannot view all past and current pickup requests with details. | Fail ❌ | D00       | Major    | Keamogetswe | 2025-11-13 |
+| TC038        | Verify completed and cancelled requests appear in history.                 | Manual    | Completed and cancelled requests are shown correctly.               | Completed and cancelled requests are not shown at all               | Fail ❌ | D00       | Major    | Keamogetswe | 2025-11-13 |
+| TC039        | Verify user can cancel a pending pickup request.                           | Manual    | Pending request changes status to “Cancelled.”                      | Rser cannot cancel a pending pickup request. | Fail ❌ | D000    | Critical | Keamogetswe | 2025-11-13 |
+| TC040        | Verify completed or cancelled requests cannot be cancelled again.          | Manual    | System prevents double cancellation.                                | N/A  | Fail ❌ | D000 | Major    | Keamogetswe | 2025-11-13 |
+| TC041        | Verify modification of pickup details at least 24 hours before schedule.   | Manual    | User can update details successfully.                               | N/A       | Fail ❌ | D000 | Major    | Keamogetswe | 2025-11-13 |
+| TC042        | Verify modification not allowed within 24 hours of scheduled time.         | Manual    | System prevents modification and shows warning.                     |N/A                                                            | Fail ❌ | D000       | Medium   | Keamogetswe | 2025-11-13 |
+| TC043        | Verify system displays correct request status for each pickup.             | Manual    | Status correctly shows Pending, Confirmed, Completed, or Cancelled. | Pickup status are not listed or visible                                                             | Fail ❌ | D000      | Major    | Keamogetswe | 2025-11-13 |
+| TC044        | Verify request status updates automatically after completion/cancellation. | Manual    | Status updates dynamically after change.                            |        Pickup status are not listed or visible  | Fail ❌ | D000 | Major    | Keamogetswe | 2025-11-13 |
+
 
 
 
