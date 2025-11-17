@@ -94,8 +94,7 @@ The purpose of this report is to validate that the application meets its functio
 | ------------ | ----------------------------------------------------------------------------- | --------- | -------------------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
 | TC045        | Verify that the system provides real-time status updates for pickup requests. | Manual    | Status of each pickup request updates dynamically without requiring page refresh.            |               |    Fail ❌    | —         | —        |     Sally Trizer   |  2025-11-16 |
 | TC046        | Verify that users receive notifications for pickup request status changes.    | Manual    | User receives notifications (email, SMS, or in-app) whenever the status of a pickup changes. |               |    Fail ❌    | —         | —        |     Sally Trizer   | 2025-11-16  |
-| TC047        | Verify that users can add feedback after a pickup is completed.               | Manual    | Users can submit feedback, and the system stores it associated with the completed pickup.    |               |   Pass ✅      | —         | —        |    Sally Trizer   | 2025-11-16  |
-
+| TC047        | Verify that users can add feedback after a pickup is completed.               | Manual    | Users can submit feedback, and the system stores it associated with the completed pickup.    |               |   Pass ✅      | —         | —        |  Keamogetswe  | 2025-11-16  |
 
 ---
 ### **3. 📊 Dashboard & Analytics Requirements**
@@ -103,12 +102,9 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 3.1:
 | Test Case ID | Objective                                                                              | Test Type | Expected Result                                                                                                   | Actual Result                                                       | Status | Defect ID | Severity | Tester      | Date       |
 | ------------ | -------------------------------------------------------------------------------------- | --------- | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- | ------ | --------- | -------- | ----------- | ---------- |
-| TC048        | Verify that the user dashboard displays personalized information for logged-in users   | Manual    | Dashboard shows recent pickup requests, upcoming scheduled pickups, achievement badges, and quick action buttons  | —                                                                   | | —         | Major    | | |
-| TC049        | Verify that the system shall calculate and display user's environmental impact metrics | Manual    | Dashboard correctly calculates and displays total waste diverted, CO2 emissions saved, and trees equivalent saved | —                                                                   | | —         |    |  |  |
-| TC050        | Verify that the system awards badges for various achievements                          | Manual    | User is awarded badges based on milestones and badges are displayed on the dashboard                              | —                                                                   |  | —         |  |  | |
-
-
-
+| TC048        | Verify that the user dashboard displays personalized information for logged-in users   | Manual    | Dashboard shows recent pickup requests, upcoming scheduled pickups, achievement badges, and quick action buttons  | Dashboard does not show anything personlised information |Fail ❌ | D-000  | Minor  | Keamogetswe | 2025-11-16  |
+| TC049        | Verify that the system shall calculate and display user's environmental impact metrics | Manual    | Dashboard correctly calculates and displays total waste diverted, CO2 emissions saved, and trees equivalent saved |None of the impact metric is shown | Fail ❌| D-000 |   Minor | Keamogetswe | 2025-11-16  |
+| TC050        | Verify that the system awards badges for various achievements                          | Manual    | User is awarded badges based on milestones and badges are displayed on the dashboard | badges are displayed on the dashboard  | Fail ❌  | D000 | Minor | Keamogetswe  | 2025-11-16 |
 
 ---
 ### **4. 📝 Content Management Requirements**
