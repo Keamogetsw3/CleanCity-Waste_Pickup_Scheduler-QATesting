@@ -70,6 +70,18 @@
 | TC024        | Verify user can successfully login then log out  | User is logged out and redirected to the Home page       | R001    | Positive test case |
 
 ---
+
+##### 1.4 👤 Role-Based Access Test Cases
+#### Table 1.4.1 Test cases for **manual testing** 📝
+| Test Case ID | Objective                                                                                                  | Expected Result                                                                | Risk ID |
+| ------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ | ------- |
+| TC019        | Verify system creates a new user account with “User” role upon successful registration                     | System automatically assigns the “User” role to newly registered accounts      | R004    |
+| TC020        | Verify system supports two user roles: “User” and “Admin”. Each user can have only one valid role assigned | System supports two user roles: “User” and “Admin”                             | R004    |
+| TC021        | Verify only Admins can access Admin Dashboard                                                              | “User” role doesn't show Admin dashboard. “Admin” role can access successfully | R004    |
+| TC022        | Verify direct URL access to Admin Dashboard is blocked for non-admin users                                 | System restricts access and redirects to “Access Denied” or “Login” page       | R004    |
+
+---
+
 ### 1.4 User Session Management (localStorage)
 | Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
 |--------------|--------------------------------------------------------|-----------------------------------------------------------------|---------|
