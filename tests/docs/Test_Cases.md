@@ -179,8 +179,8 @@
 #### **5.2 👥 Social Features Test Cases**
 | Test Case ID | Objective                                            | Expected Result                                                                | Risk Link | Notes              |
 | ------------ | ---------------------------------------------------- | ------------------------------------------------------------------------------ | --------- | ------------------ |
-| TC068        | Verify that users can follow other community members | Users can follow/unfollow other community members successfully                 | R009      | Positive test case |
-| TC069        | Verify that news feed displays community activities  | News feed shows latest activities (posts, likes, comments) from followed users | R009      | Positive test case |
+| TC068        | Verify that users can follow other community members | Users can follow/unfollow other community members successfully                 | R005      | Positive test case |
+| TC069        | Verify that news feed displays community activities  | News feed shows latest activities (posts, likes, comments) from followed users | R005      | Positive test case |
 
 
 ---
