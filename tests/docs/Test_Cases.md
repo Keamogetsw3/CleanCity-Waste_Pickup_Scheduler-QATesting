@@ -126,8 +126,14 @@
 | TC047        | Verify that users can add feedback after a pickup is completed.               | Users can submit feedback, and the system stores it associated with the completed pickup.    | R002    | Positive test case |
 
 ---
-## **3. 📊 Dashboard & Analytics Requirements**
+### **3. 📊 Dashboard & Analytics Requirements**
 ---
+#### 3.1 User Dashboard
+#### Table 3.1.1 Test cases for **manual testing** 📝
+| Test Case ID | Objective                                                                     | Expected Result                                                                              | Risk ID | Notes              |
+| ------------ | ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ------- | ------------------ |
+| TC048        | Verify that the user dashboard displays personalized information for logged-in users | Dashboard shows recent pickup requests, upcoming scheduled pickups, achievement badges, and quick action buttons | R002    | Positive test case |
+| TC049        | Verify that the system shall calculate and display user's environmental impact metrics | System calculated and display user's environmental impact metrics | R002    | Positive test case |
 
 
 
