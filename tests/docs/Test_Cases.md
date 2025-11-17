@@ -177,10 +177,11 @@
 
 ---
 #### **5.2 👥 Social Features Test Cases**
-| Test Case ID | Objective                                            | Test Type | Expected Result                                                                | Actual Result                                                | Status | Defect ID | Severity | Tester      | Date       |
-| ------------ | ---------------------------------------------------- | --------- | ------------------------------------------------------------------------------ | ------------------------------------------------------------ | ------ | --------- | -------- | ----------- | ---------- |
-| TC068        | Verify that users can follow other community members | Manual    | Users can follow/unfollow other community members successfully                 | Unable to follow/unfollow other community members            | Fail ❌ | D001      | Major    | Keamogetswe | 2025-11-17 |
-| TC069        | Verify that news feed displays community activities  | Manual    | News feed shows latest activities (posts, likes, comments) from followed users | News feed did not update or show latest community activities | Fail ❌ | D002      | Major    | Keamogetswe | 2025-11-17 |
+| Test Case ID | Objective                                            | Expected Result                                                                | Risk Link | Notes              |
+| ------------ | ---------------------------------------------------- | ------------------------------------------------------------------------------ | --------- | ------------------ |
+| TC068        | Verify that users can follow other community members | Users can follow/unfollow other community members successfully                 | R009      | Positive test case |
+| TC069        | Verify that news feed displays community activities  | News feed shows latest activities (posts, likes, comments) from followed users | R009      | Positive test case |
+
 
 ---
 ---
