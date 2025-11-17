@@ -8,7 +8,7 @@
 
 ---
 
-# Functional Test Cases
+## Functional Test Cases
 
 ### **1 🔐 Authentication System Requirements**
 ---
@@ -33,16 +33,29 @@
 | TC010       | Register user with empty password | Validation error displayed   | R001   | Negative Test Case |
 
 ---
-#### 1.2 Login Test Cases
 
-| Test Case ID | Objective                                | Expected Result                       | Risk ID |
-|--------------|-----------------------------------------|---------------------------------------|-----------|
-| TC-006      | Login with valid credentials             | Login successful                      | R-001      |
-| TC-007      | Login with invalid password              | Error: "Invalid email or password"    | R-001      |
-| TC-008      | Login with empty Email             | System should display email required error    | R-001      |
-| TC-009      | Login with empty Password              | System should display password required error | R-001      |
-| TC-010      | Login with non-existent user             | Error: "Invalid email or password"    | R-001      |
+#### 1.2 👤 User Login Test Cases
+
+#### Table 1.2.1 Test cases for **manual testing** 📝
+| Test Case ID | Objective                    | Expected Result                               | Risk ID | Notes            |
+| ------------ | ---------------------------- | --------------------------------------------- | ------- | ---------------- |
+| TC011        | Login with valid credentials | Login successful                              | R001    | Positive Test Case |
+| TC012        | Login with invalid password  | Error: "Invalid email or password"            | R001    | Negative Test Case |
+| TC013        | Login with empty Email       | System should display email required error    | R001    | Negative Test Case |
+| TC014        | Login with empty Password    | System should display password required error | R001    | Negative Test Case  |
+| TC015        | Login with non-existent user | Error: "Invalid email or password"            | R001    | Negative Test Case  |
+
+#### 1.2.2 Test cases for **Selenium automated testing** 🤖
+| Test Case ID | Objective                    | Expected Result                               | Risk ID | Notes            |
+| ------------ | ---------------------------- | --------------------------------------------- | ------- | ---------------- |
+| TC016        | Login with valid credentials | Login successful                              | R001    | Positive Test Case |
+| TC017        | Login with invalid password  | Error: "Invalid email or password"            | R001    | Negative Test Case |
+| TC018        | Login with empty Email       | System should display email required error    | R001    | Negative Test Case |
+| TC019        | Login with empty Password    | System should display password required error | R001    | Negative Test Case  |
+| TC020        | Login with non-existent user | Error: "Invalid email or password"            | R001    | Negative Test Case  |
+
 ---
+
 ### 1.3 Logout Test Cases
 | Test Case ID | Objective                                      | Expected Result                                               | Risk ID |
 |--------------|------------------------------------------------|---------------------------------------------------------------|---------|
