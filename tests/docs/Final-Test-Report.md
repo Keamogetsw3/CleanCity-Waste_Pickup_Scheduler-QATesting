@@ -234,6 +234,7 @@ Based on current results, the system **SHOULD NOT BE RELEASED** in its current s
 
 
 ## how to acces the data 
-on the repository link click on the test file - then on the 
+on the repository link click on the test file - then on the Doc data.....you will have access to all impoertant documents on the software testing
 <img width="1331" height="481" alt="image" src="https://github.com/user-attachments/assets/74ef4722-8b0b-40a4-951e-ed9007de1de6" />
+<img width="1331" height="592" alt="image" src="https://github.com/user-attachments/assets/38a8d8f2-b777-411f-8156-96421c60806c" />
 
