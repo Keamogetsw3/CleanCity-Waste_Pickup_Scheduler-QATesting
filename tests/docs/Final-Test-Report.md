@@ -1,10 +1,10 @@
-# CleanCity: Waste Pickup Scheduler - Test Report
+# CleanCity: Waste Pickup Scheduler - Test Report written by sally trizer
 ![Alt text](cleancity.png)
 
 # 🟢 CleanCity Project – Software Testing Report
 
 **Version:** 1.0  
-**Test Date:** [Insert Date]  
+**Test Date:** 15 th nov 2025  
 **Test Manager:** Keamogetswe  
 **Tester(s):** Keamogetswe, Sally  
 **Risk Analyst:** Sally Trizer  
@@ -238,3 +238,26 @@ on the repository link click on the test file - then on the Doc data.....you wil
 <img width="1331" height="481" alt="image" src="https://github.com/user-attachments/assets/74ef4722-8b0b-40a4-951e-ed9007de1de6" />
 <img width="1331" height="592" alt="image" src="https://github.com/user-attachments/assets/38a8d8f2-b777-411f-8156-96421c60806c" />
 
+# Approvals
+
+The following stakeholders have reviewed the CleanCity Software Testing Report and approve its contents, findings, and recommendations. Their signatures confirm that the testing process has been completed to the agreed standards and that all documented results are accurate.
+
+## Approved By
+
+### Test Manager
+**Name:** Keamogetswe  
+**Signature:** __________________________  
+**Date:** ____18th november___________________________
+
+### Tester
+**Name:** Sally Trizer  and keamogetswe 
+**Signature:** ___sato_______________________  
+**Date:** ____18th november___________________________
+
+### Risk Analyst
+**Name:** Sally Trizer  
+**Signature:** ___sato_______________________  
+**Date:** __18th november_____________________________
+
+end of test report 
+sally trizer
