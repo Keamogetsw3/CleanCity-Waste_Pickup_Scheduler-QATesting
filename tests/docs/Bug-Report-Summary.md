@@ -61,10 +61,12 @@ The system allows users to log in with any incorrect password, bypassing the aut
 2. Log out.  
 3. Attempt login with a wrong password (e.g., WrongPassword).  
 
-### Expected Result  
+### Expected Result 
+
 System should reject incorrect credentials and display: **“Invalid email or password.”**
 
-### Actual Result  
+### Actual Result 
+
 Login succeeds even with a completely incorrect password.
 
 ---
