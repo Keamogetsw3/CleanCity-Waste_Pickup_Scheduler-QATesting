@@ -173,30 +173,32 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 6.1 Request Management Test case execusion report
 | Test Case ID | Test Description                                           | Test Type          | Expected Result                                                               | Actual Result | Status | Defect ID | Severity | Tester | Date |
 | ------------ | ---------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
-| TC070    | Verify that admins can view all pickup requests | Manual | Admin can view a full list of all pickup requests with complete details | Admin can view a full list of all pickup requests with complete details  | Pass ✅ |  — |  — | Keamogetswe| 2025-11-17 |
+| TC070    | Verify that admins can view all pickup requests | Manual | Admin can view a full list of all pickup requests with complete details | Admin can view a full list of all pickup requests but not the complete details  | Pass ✅ |  — |  — | Keamogetswe| 2025-11-17 |
 | TC071   | Verify that admins can approve, reject or modify requests | Manual | Admin can successfully approve, reject or modify any pickup request |               |        |  Fail ❌ |          | Keamogetswe |2025-11-17 |
 | TC072   | Verify that admins can assign pickup dates and times       | Manual | Admin can set or update pickup dates/times and changes are saved successfully |               |   Fail ❌ |           |          | Keamogetswe | 2025-11-17 |
 | TC073    | Verify that admins can filter and search pickup requests | Manual | The system returns correct filtered or searched results based on criteria |               |   Fail ❌ |           |          | Sally Trizer  | 2025-11-13 |
+| TC077    | Verify that admins can receive or reply to feedback | Manual    | Feedback system should accept and reply properly   | Admin unable to receive or reply to feedback  | Fail ❌ |           | Sally Trizer  | 2025-11-13  |
 
 
 ---
 #### Table 6.2 User Management Test case execusion report
 | Test Case ID | Test Description                                  | Test Type | Expected Result                                                             | Actual Result | Status | Defect ID | Severity | Tester | Date |
 | ------------ | ------------------------------------------------- | --------- | --------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
-| TC074    | Verify that admins can view all registered users  | Manual    | Admin can successfully view a complete list of all registered system users  |               |        |           |          |        |      |
-| TC075    | Verify that admins can change user roles          | Manual    | Admin can update user roles and changes are saved and reflected immediately |               |        |           |          |        |      |
-| TC076    | Verify that admins can suspend or delete accounts | Manual    | Admin can suspend or delete user accounts and the system updates the status |               |        |           |          |        |      |
-| TC077    | Verify that system provides user activity reports | Manual    | Admin can view activity reports including logins, actions, and timestamps   |               |        |           |          |        |      |
+| TC074    | Verify that admins can view all registered users  | Manual    | Admin can successfully view a complete list of all registered system users  |               |Fail ❌ |           |          |        |      |
+| TC075    | Verify that admins can change user roles          | Manual    | Admin can update user roles and changes are saved and reflected immediately |               | Fail ❌ |           |          |        |      |
+| TC076    | Verify that admins can suspend or delete accounts | Manual    | Admin can suspend or delete user accounts and the system updates the status |               | Fail ❌ |           |          |        |      |
+| TC077    | Verify that system provides user activity reports | Manual    | Admin can view activity reports   |               | Pass ✅|           |          |        |      |
 
 
 ---
 #### Table 6.3: Content Moderation Test case execusion report
 | Test Case ID | Test Description                                             | Test Type | Expected Result                                                                   | Actual Result | Status | Defect ID | Severity | Tester | Date |
 | ------------ | ------------------------------------------------------------ | --------- | --------------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
-| TC078    | Verify that admins can moderate community posts and comments | Manual    | Admin can view, review, and manage all posts/comments from the moderation panel   |               |        |           |          |        |      |
-| TC079   | Verify that admins can delete inappropriate content          | Manual    | Admin can successfully delete posts/comments and they no longer appear publicly   |               |        |           |          |        |      |
-| TC080  | Verify that users can flag/ report inappropriate content     | Manual    | Users can flag posts/comments and reports appear in the admin moderation queue    |               |        |           |          |        |      |
-| TC081  | Verify that admins can create announcements                  | Manual    | Admin can create announcements and they appear on the community/announcement page |               |        |           |          |        |      |
+| TC078    | Verify that admins can moderate community posts and comments | Manual    | Admin can view, review, and manage all posts/comments from the moderation panel   |               | Fail ❌ |           |          |        |      |
+| TC079   | Verify that admins can delete inappropriate content          | Manual    | Admin can successfully delete posts/comments and they no longer appear publicly   |               | Fail ❌|           |          |        |      |
+| TC080  | Verify that users can flag/ report inappropriate content     | Manual    | Users can flag posts/comments and reports appear in the admin moderation queue    |               | Fail ❌ |           |          |        |      |
+| TC081  | Verify that admins can create announcements                  | Manual    | Admin can create announcements and they appear on the community/announcement page |               | Pass ✅ |           |          |        |      |
+| TC078    | Verify that admins can publish a new blog post | Manual    | Post appears in blog list  | Blog post failed to publish | Fail ❌ |           |          |  Sally Trizer   |      |
 
 ---
 ### **7. 🔔 Notification System Requirements**
@@ -204,10 +206,10 @@ The purpose of this report is to validate that the application meets its functio
 #### Table 7.1: System Notifications Test case execusion report
 | Test Case ID | Test Description                                                                                               | Test Type | Expected Result                                                              | Actual Result | Status | Defect ID | Severity | Tester | Date |
 | ------------ | -------------------------------------------------------------------------------------------------------------- | --------- | ---------------------------------------------------------------------------- | ------------- | ------ | --------- | -------- | ------ | ---- |
-| TC082 | Verify that the system displays a notification bell with unread count                                          | Manual    | Notification bell is visible and shows the correct unread notification count |               |        |           |          |        |      |
-| TC083  | Verify that the system shows notifications for pickup updates, blogs, community interactions, and achievements | Manual    | All notification types appear correctly in the notification list             |               |        |           |          |        |      |
-| TC084 | Verify that users can mark notifications as read                                                               | Manual    | Selected notifications change to “read” state and unread counter updates     |               |        |           |          |        |      |
-| TC085 | Verify that the system provides a full notification history                                                    | Manual    | Notification history page displays past notifications in chronological order |               |        |           |          |        |      |
+| TC082 | Verify that the system displays a notification bell with unread count                                          | Manual    | Notification bell is visible and shows the correct unread notification count |               |Pass ✅  |           |          |        |      |
+| TC083  | Verify that the system shows notifications for pickup updates, blogs, community interactions, and achievements | Manual    | All notification types appear correctly in the notification list             |               | Pass ✅ |           |          |        |      |
+| TC084 | Verify that users can mark notifications as read                                                               | Manual    | Selected notifications change to “read” state and unread counter updates     |               | Fail ❌ |           |          |        |      |
+| TC085 | Verify that the system provides a full notification history                                                    | Manual    | Notification history page displays past notifications in chronological order |               | Pass ✅ |           |          |        |      |
 ---
 ### **8 🔒 Data Management Requirements**
 ---
