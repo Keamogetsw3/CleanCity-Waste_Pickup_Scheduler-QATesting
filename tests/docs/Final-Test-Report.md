@@ -189,6 +189,7 @@ The following areas were not included in the testing scope:
 |                          | Compatibility                                        |        |           |       |
 |                          | Accessibility                                        |        |           |       |
 | Boundary / Edge Cases    |                                                      |        |           |       |
+| **Total Test Cases**     |                                                      |        |           |       |
 
 ### 6.1 (b) Ssample test cases 
 <img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
@@ -213,46 +214,24 @@ The following areas were not included in the testing scope:
 
 
 
-## 7. Defect Summary
+## 7. Defect Analysis and Categorization
+During testing of the CleanCity system, a total of 58 defects were identified across (42) functional and (16) non-functional modules. Defects were categorised by severity, module, and type to assess system readiness and guide remediation efforts.
 
-### Functional Test Defects
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4a827ff8-c81e-48c9-8b8d-b73eb2a2e07c" />
+---
+Defects were categorised based on severity, with testing identifying 3 critical, 39 major, 12 minor, and 3 cosmetic issues. This classification highlights the areas of highest risk, allowing the team to prioritise fixes and retesting, focusing first on critical and major defects to ensure the stability and reliability of the CleanCity system before release.
 
-| ID | Issue Title | Severity | Risk ID | Status | GitHub Link | Test Case ID |
-|----|------------|---------|---------|--------|------------|-------------|
-| D-001 | Profile shows email instead of full name | Cosmetic | R00 | Open | [Issue #28](#) | TC-001 |
-| D-002 | Existing user can login with a completely invalid password | Critical | R001 | Open | [Issue #31](#) | TC-005 |
-| D-003 | System allows login with unregistered credentials | Critical | R001 | Open | [Issue #32](#) | TC-006 |
-| D-004 | Pick-up request submitted without user registration | Major | R001 | Open | [Issue #33](#) | TC-010 |
-| D-005 | The pickup is scheduled even with invalid date | Medium | R003 | Open | [Issue #34](#) | TC-025 |
-| D-006 | Pickup request allows instructions exceeding 200 characters | Medium | R003 | Open | [Issue #41](#) | TC-028 |
-| D-007 | Scheduling multiple pickups for the same date | Medium | R003 | Open | [Issue #42](#) | TC-029 |
-
-### Non-Functional Test Defects
-
-| ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
-|----|------------|---------|---------|--------|------------|
-| D-008 | Menu bar expands excessively when resizing window | Medium | R008 | Open | [Issue #55](#) |
-| D-009 | Low contrast text fails WCAG 2.1 AA | Major | R008 | Open | [Issue #56](#) |
-
-### Accessibility Test Defects
-
-| ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
-|----|------------|---------|---------|--------|------------|
-| D-010 | [Add title] | Major | R006 | Open / In Progress / Resolved / Closed | [Link](#) |
-| D-011 | [Add title] | Major | R007 | Open / In Progress / Resolved / Closed | [Link](#) |
-
-### Cross-Browser Compatibility Test Defects
-
-| ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
-|----|------------|---------|---------|--------|------------|
-| D-012 | [Add title] | Minor | R008 | Open / In Progress / Resolved / Closed | [Link](#) |
-| D-013 | [Add title] | Major | R009 | Open / In Progress / Resolved / Closed | [Link](#) |
-
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/48fafebf-4612-4442-904f-dd42a1b1c69d" />
 ---
 
-## 7b. Defect Summary by Category
+Most critical defects relate to login and authentication issues, while medium defects primarily involve scheduling and input validations. Non-functional and accessibility defects require UI and compliance fixes. Continuous monitoring is recommended for pending and in-progress defects to ensure timely resolution.
 
-Functional testing identified 7 defects, including 2 critical, 1 major, 3 medium, and 1 cosmetic. Non-functional testing revealed 2 defects, 1 major and 1 medium. Accessibility testing included 2 major defects, while cross-browser compatibility testing identified 2 defects (1 major, 1 minor). In total, 13 defects were reported. Most critical defects relate to login and authentication issues, while medium defects primarily involve scheduling and input validations. Non-functional and accessibility defects require UI and compliance fixes. Continuous monitoring is recommended for pending and in-progress defects to ensure timely resolution.
+### 7.1 Sample of defect log
+ID	Issue Title	Severity	Risk ID	Status	GitHub Link	Test Case ID
+D-002	Existing user can login with a completely invalid password	Critical	R001	Open	Issue #31	TC-002
+D-003	System allows login with unregistered credentials	Critical	R001	Open	Issue #32	TC-003
+D-004	Pick-up request submitted without user registration	Critical	R001	Open	Issue #33	TC-020
+
 
 ## 8. some of the issues  raised
 <img width="1308" height="540" alt="image" src="https://github.com/user-attachments/assets/7593d44d-efcd-4e3b-b043-be54b286be19" />
