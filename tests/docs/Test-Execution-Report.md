@@ -3,61 +3,68 @@ This section provides a detailed summary of the test cases executed during Phase
 The purpose of this report is to validate that the application meets its functional requirements.
 
 ---
+
 # **Functional Testing**
 
 ### **1 🔐 Authentication System Requirements**
----
-#### Table 1.1 👤 User Registration Test Cases
-
-| Test Case ID | Test Description                           | Test Type  | Expected Result                        | Actual Result                  | Status | Defect ID | Severity | Tester        | Date       |
-| ------------ | ------------------------------------------ | ---------- | -------------------------------------- | ------------------------------ | ------ | --------- | -------- | ------------- | ---------- |
-| TC001        | Verify registration with valid credentials | Manual | User should be registered successfully | User successfully registered   | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC002        | Verify registration with invalid email     | Manual | System should ask for valid email      | System asked for correct email | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC003        | Verify registration with empty name field  | Manual | System should ask for Name             | System asked for full name     | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC004        | Verify registration with empty email       | Manual | System should ask for Email            | System asked for Email         | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC005        | Verify registration with empty password    | Manual| System should ask for Password         | System asked for Password      | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC006        | Verify registration with valid credentials | Automated | User should be registered successfully | User successfully registered   | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC007        | Verify registration with invalid email     | Automated | System should ask for valid email      | System asked for correct email | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC008        | Verify registration with empty name field  | Automated | System should ask for Name             | System asked for full name     | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC009        | Verify registration with empty email       | Automated | System should ask for Email            | System asked for Email         | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-| TC010        | Verify registration with empty password    | Automated | System should ask for Password         | System asked for Password      | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
-
----
-#### Table 1.2 👤 User Login Test Cases
-
-| Test Case ID | Test Description                          | Test Type   | Expected Result                       | Actual Result                | Status  | Defect ID | Severity | Tester          | Date       |
-|--------------|-------------------------------------------|------------|---------------------------------------|------------------------------|---------|-----------|---------|----------------|-----------|
-| TC011      | Verify login with valid credentials       | Manual | User should be logged in successfully | User successfully logged in  | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC012      | Verify login with invalid password        | Manual| System should display error  | User succefully logged in | Fail ❌ | [D-002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)       | Critical     | Keamogetswe | 2025-11-11 |
-| TC013      | Verify login without email       | Manual| System should display email required error | Error displayed: "Fill this field" | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC014      | Verify login without password    | Manual | System should display password required error| Error displayed: "Fill this field" | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC015      | Verify login with non-existent user       | Manual | System should display error           | User logged in succefully   | Fail ❌ |[D-003](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)        | Critical       | Keamogetswe | 2025-11-12 |
-| TC016      | Verify login with valid credentials       | Automated | User should be logged in successfully | User successfully logged in  | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC017      | Verify login with invalid password        | Automated  | System should display error  | User succefully logged in | Fail ❌ | [D-002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)       | Critical     | Keamogetswe | 2025-11-11 |
-| TC018      | Verify login without email       | Automated  | System should display email required error | Error displayed: "Fill this field" | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC019      | Verify login without password    | Automated | System should display password required error| Error displayed: "Fill this field" | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-10 |
-| TC020      | Verify login with non-existent user       | Automated  | System should display error           | User logged in succefully   | Fail ❌ |[D-003](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)        | Critical       | Keamogetswe | 2025-11-10 |
 
 ---
 
+## **Table 1.1 👤 User Registration Test Cases**
+
+| Test Case ID | Test Description                           | Test Type  | Expected Result                        | Actual Result                  | Status | Defect ID | Severity | Tester       | Date       |
+|--------------|---------------------------------------------|------------|----------------------------------------|--------------------------------|--------|-----------|----------|--------------|------------|
+| TC001        | Verify registration with valid credentials  | Manual     | User should be registered successfully | User successfully registered   | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC002        | Verify registration with invalid email      | Manual     | System should ask for valid email      | System asked for correct email | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC003        | Verify registration with empty name field   | Manual     | System should ask for Name             | System asked for full name     | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC004        | Verify registration with empty email        | Manual     | System should ask for Email            | System asked for Email         | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC005        | Verify registration with empty password     | Manual     | System should ask for Password         | System asked for Password      | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC006        | Verify registration with valid credentials  | Automated  | User should be registered successfully | User successfully registered   | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC007        | Verify registration with invalid email      | Automated  | System should ask for valid email      | System asked for correct email | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC008        | Verify registration with empty name field   | Automated  | System should ask for Name             | System asked for full name     | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC009        | Verify registration with empty email        | Automated  | System should ask for Email            | System asked for Email         | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+| TC010        | Verify registration with empty password     | Automated  | System should ask for Password         | System asked for Password      | Pass ✅ | —         | —        | Keamogetswe | 2025-11-10 |
+
+---
+
+## **Table 1.2 👤 User Login Test Cases**
+
+| Test Case ID | Test Description                     | Test Type  | Expected Result                               | Actual Result                       | Status  | Defect ID | Severity  | Tester       | Date       |
+|--------------|---------------------------------------|------------|-----------------------------------------------|-------------------------------------|---------|-----------|-----------|--------------|------------|
+| TC011        | Verify login with valid credentials   | Manual     | User should be logged in successfully         | User successfully logged in         | Pass ✅ | —         | —         | Keamogetswe  | 2025-11-10 |
+| TC012        | Verify login with invalid password    | Manual     | System should display error                   | User successfully logged in ❗        | Fail ❌ | [D-002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31) | Critical | Keamogetswe | 2025-11-11 |
+| TC013        | Verify login without email            | Manual     | System should display email required error    | Error displayed: "Fill this field"  | Pass ✅ | —         | —         | Keamogetswe  | 2025-11-10 |
+| TC014        | Verify login without password         | Manual     | System should display password required error | Error displayed: "Fill this field"  | Pass ✅ | —         | —         | Keamogetswe  | 2025-11-10 |
+| TC015        | Verify login with non-existent user   | Manual     | System should display error                   | User logged in successfully ❗        | Fail ❌ | [D-003](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32) | Critical | Keamogetswe | 2025-11-12 |
+| TC016        | Verify login with valid credentials   | Automated  | User should be logged in successfully         | User successfully logged in         | Pass ✅ | —         | —         | Keamogetswe  | 2025-11-10 |
+| TC017        | Verify login with invalid password    | Automated  | System should display error                   | User successfully logged in ❗        | Fail ❌ | [D-002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31) | Critical | Keamogetswe | 2025-11-11 |
+| TC018        | Verify login without email            | Automated  | System should display email required error    | Error displayed: "Fill this field"  | Pass ✅ | —         | —         | Keamogetswe  | 2025-11-10 |
+| TC019        | Verify login without password         | Automated  | System should display password required error | Error displayed: "Fill this field"  | Pass ✅ | —         | —         | Keamogetswe  | 2025-11-10 |
+| TC020        | Verify login with non-existent user   | Automated  | System should display error                   | User logged in successfully ❗        | Fail ❌ | [D-003](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32) | Critical | Keamogetswe | 2025-11-10 |
+
+---
 #### Table 1.3 👤 User Logout Test Cases
-| Test Case ID | Test Description                          | Test Type   | Expected Result                       | Actual Result                | Status  | Defect ID | Severity | Tester          | Date       |
-|--------------|-------------------------------------------|------------|---------------------------------------|------------------------------|---------|-----------|---------|----------------|-----------|
-| TC021      | Verify logout       | Manual| User should be logged out successfully | User successfully logged out  | Pass ✅  | —         | —       | Keamogetswe  | 2025-11-12 |
-| TC022      | Verify user cannot access dashboard after logout  | Manual | Attempting to access dashboard redirects to login page  | User redirected to login page | Pass ✅ | — | —  | Keamogetswe | 2025-11-12 |
-| TC023      | Verify scheduling a pickup without login  | Manual| System should restrict access and redirect to login page | Pick-up succefully submitted   | Fail ❌ |[D-004](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)        | Critical      | Keamogetswe | 2025-11-12 |
-| TC024      | Verify user can successfully login then log out | Automated | User should be logged out successfully | |  |  |  |  |  |
+
+| Test Case ID | Test Description                                      | Test Type  | Expected Result                                              | Actual Result                    | Status  | Defect ID | Severity | Tester       | Date       |
+|--------------|--------------------------------------------------------|------------|--------------------------------------------------------------|----------------------------------|---------|-----------|----------|--------------|------------|
+| TC021        | Verify logout                                          | Manual     | User should be logged out successfully                      | User successfully logged out     | Pass ✅ | —         | —        | Keamogetswe | 2025-11-12 |
+| TC022        | Verify user cannot access dashboard after logout       | Manual     | Attempting to access dashboard redirects to login page       | User redirected to login page    | Pass ✅ | —         | —        | Keamogetswe | 2025-11-12 |
+| TC023        | Verify scheduling a pickup without login               | Manual     | System should restrict access and redirect to login page     | Pick-up successfully submitted ❗ | Fail ❌ | [D-004](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33) | Critical | Keamogetswe | 2025-11-12 |
+| TC024        | Verify user can successfully login then log out        | Automated  | User should be logged out successfully                       | —                                | —       | —         | —        | —            | —          |
 
 ---
-#### Table 1.4: 👤 Role-Based Access Test Cases
-| Test Case ID | Test Description                          | Test Type   | Expected Result                       | Actual Result                | Status  | Defect ID | Severity | Tester          | Date       |
-|--------------|-------------------------------------------|------------|---------------------------------------|------------------------------|---------|-----------|---------|----------------|-----------|
-| TC025 | Verify system creates a new user account with “User” role upon successful registration | Manual  | System automatically assigns the “User” role to newly registered accounts |  System assigned the “User” role to newly registered accounts| Pass ✅  | — | — | Keamogetswe  | 2025-11-12 |
-| TC026 | Verify system supports two user roles: “User” and “Admin”. each user can have only one valid role assigned| Manual  | System supports two user roles: “User” and “Admin” |  System supports two user roles: “User” and “Admin” and correctly assign role| Pass ✅  | — | — | Keamogetswe  | 2025-11-12 |
-| TC027 | Verify only Admins can access Admin Dashboard | Manual  | “User” role doesnt show Admin dashboard. “Admin” role can access successfully | “User” role doesnt show Admin dashboard. “Admin” role can access successfully | Pass ✅  | — | — | Keamogetswe. Sally Trizer | 2025-11-12 |
-| TC028 |Verify direct URL access to Admin Dashboard is blocked for non-admin users | Manual | System restricts access and redirects to “Access Denied” or “Login” page | System restricts access and shows "This page isn’t working" | Pass ✅  | — | — | Keamogetswe | 2025-11-12 |
+
+#### Table 1.4 👤 Role-Based Access Test Cases
+
+| Test Case ID | Test Description                                                                 | Test Type | Expected Result                                                                 | Actual Result                                                                 | Status  | Defect ID | Severity | Tester                      | Date       |
+|--------------|-----------------------------------------------------------------------------------|-----------|---------------------------------------------------------------------------------|-------------------------------------------------------------------------------|---------|-----------|----------|------------------------------|------------|
+| TC025        | Verify system creates a new user account with “User” role upon registration       | Manual    | System automatically assigns the “User” role to newly registered accounts       | System assigned the “User” role to newly registered accounts                 | Pass ✅ | —         | —        | Keamogetswe                 | 2025-11-12 |
+| TC026        | Verify system supports only two roles: “User” and “Admin”                         | Manual    | System supports two user roles: “User” and “Admin”                              | System supports “User” and “Admin” roles and assigns roles correctly         | Pass ✅ | —         | —        | Keamogetswe                 | 2025-11-12 |
+| TC027        | Verify only Admins can access Admin Dashboard                                     | Manual    | “User” role cannot access Admin dashboard; “Admin” role can access successfully | “User” role blocked; “Admin” role accessed successfully                      | Pass ✅ | —         | —        | Keamogetswe, Sally Trizer   | 2025-11-12 |
+| TC028        | Verify direct URL access to Admin Dashboard is blocked for non-admin users        | Manual    | System restricts access and redirects to “Access Denied” or “Login” page        | System restricts access but shows “This page isn’t working”                  | Pass ✅ | —         | —        | Keamogetswe                 | 2025-11-12 |
 
 ---
+
 ### **2. 🗑️ Waste Management Requirements**
 ---
 
@@ -87,7 +94,6 @@ The purpose of this report is to validate that the application meets its functio
 | TC042 | Verify modification not allowed within 24 hours of scheduled time. | Manual  | System prevents modification and shows warning.           | N/A                                                        | Fail ❌  | [D017](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/66) | Major   | Sally Trizer   | 2025-11-12 |
 | TC043 | Verify system displays correct request status for each pickup.  | Manual    | Status correctly shows Pending, Confirmed, Completed, or Cancelled. | Pickup status are not listed or visible                     | Fail ❌  | [D018](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/67) | Major   | Sally Trizer   | 2025-11-12 |
 | TC044 | Verify request status updates automatically after completion/cancellation. | Manual | Status updates dynamically after change.                  | Pickup status are not listed or visible                     | Fail ❌  | [D019](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/68) | Major   | Sally Trizer   | 2025-11-12 |
-
 
 ---
 
