@@ -53,7 +53,7 @@ The profile page displays the **username derived from the email** instead of the
 
 ### 🐞 BUG-002
 - **Title:** Existing user can log in with a different password than the one used during registration  
-- **GitHub Link:** [#31](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)  
+- **GitHub Link:** [D002](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)  
 - **Requirement Affected:** User Login – Authentication  
 - **Severity:** Critical  
 - **Environment:** Development, Google Chrome, Windows 10  
@@ -82,7 +82,7 @@ The system allows login even with a different password.
 
 ### 🐞 BUG-003
 - **Title:** System allows login with unregistered credentials  
-- **GitHub Link:** [#32](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)  
+- **GitHub Link:** [D003](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)  
 - **Requirement Affected:** User Login – Authentication Validation  
 - **Severity:** Critical  
 - **Environment:** Development, Google Chrome, Windows 10  
@@ -110,7 +110,7 @@ The system allows login and grants access with unregistered credentials.
 
 ### 🐞 BUG-004
 - **Title:** Pick-up request submitted without user registration  
-- **GitHub Link:** [#33](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)  
+- **GitHub Link:** [D004](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)  
 - **Requirement Affected:** Pick-up Request – User Authentication  
 - **Severity:** Critical  
 - **Environment:** Development, Google Chrome, Windows 10  
@@ -297,110 +297,6 @@ All meaningful images have descriptive alt text.
 Alt text missing, reducing accessibility.
 
 ---
-
-### 🐞 BUG-012
-- **Title:** Waste type filter returns incorrect results  
-- **GitHub Link:** D-012  
-- **Requirement Affected:** Pickup History – Filtering  
-- **Severity:** High  
-
-#### Summary
-Filtering by waste type shows unrelated entries.
-
-#### Steps to Reproduce
-1. Open Pickup History.  
-2. Select “Plastic”.
-
-#### Expected Result
-Only plastic pickups displayed.
-
-#### Actual Result
-All waste types still appear.
-
----
-
-### 🐞 BUG-013
-- **Title:** Pickup history list pagination not working  
-- **GitHub Link:** D-013  
-- **Requirement Affected:** Pickup History – Navigation  
-- **Severity:** Medium  
-
-#### Summary
-Pagination buttons do not load new pages.
-
-#### Steps to Reproduce
-1. Click “Next Page” in Pickup History.
-
-#### Expected Result
-Next set of records loads.
-
-#### Actual Result
-Same page remains displayed.
-
----
-
-### 🐞 BUG-014
-- **Title:** Profile picture upload returns 500 server error  
-- **GitHub Link:** D-014  
-- **Requirement Affected:** User Profile – Media Upload  
-- **Severity:** High  
-
-#### Summary
-Uploading an image triggers 500 Internal Server Error.
-
-#### Steps to Reproduce
-1. Upload JPEG/PNG file in Profile.
-
-#### Expected Result
-Image uploads successfully.
-
-#### Actual Result
-Server returns 500 error.
-
----
-
-### 🐞 BUG-015
-- **Title:** Map fails to load under slow internet connections  
-- **GitHub Link:** D-015  
-- **Requirement Affected:** Pickup Location – Map Rendering  
-- **Severity:** Medium  
-
-#### Summary
-Map fails to load on slow networks.
-
-#### Steps to Reproduce
-1. Throttle network to “Slow 3G”.  
-2. Open Pickup Request page.
-
-#### Expected Result
-Map loads with fallback or spinner.
-
-#### Actual Result
-Map fails to load.
-
----
-
-### 🐞 BUG-016
-- **Title:** Pickup confirmation email not sent  
-- **GitHub Link:** D-016  
-- **Requirement Affected:** Notifications – Pickup Confirmation  
-- **Severity:** High  
-
-#### Summary
-Confirmation emails are not sent after scheduling a pickup.
-
-#### Steps to Reproduce
-1. Submit a pickup request.  
-2. Check inbox.
-
-#### Expected Result
-Confirmation email sent immediately.
-
-#### Actual Result
-No email received.
-
----
-
 ### 🐞 BUG-012
 - **Title:** User cannot view past and current pickup request history  
 - **GitHub Link:** [D012](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/61)  
@@ -592,6 +488,114 @@ The status should update immediately to reflect completion or cancellation.
 
 #### Actual Result
 Pickup status is not listed or visible.
+
+------
+
+
+### 🐞 BUG-012
+- **Title:** Waste type filter returns incorrect results  
+- **GitHub Link:** D-012  
+- **Requirement Affected:** Pickup History – Filtering  
+- **Severity:** High  
+
+#### Summary
+Filtering by waste type shows unrelated entries.
+
+#### Steps to Reproduce
+1. Open Pickup History.  
+2. Select “Plastic”.
+
+#### Expected Result
+Only plastic pickups displayed.
+
+#### Actual Result
+All waste types still appear.
+
+---
+
+### 🐞 BUG-013
+- **Title:** Pickup history list pagination not working  
+- **GitHub Link:** D-013  
+- **Requirement Affected:** Pickup History – Navigation  
+- **Severity:** Medium  
+
+#### Summary
+Pagination buttons do not load new pages.
+
+#### Steps to Reproduce
+1. Click “Next Page” in Pickup History.
+
+#### Expected Result
+Next set of records loads.
+
+#### Actual Result
+Same page remains displayed.
+
+---
+
+### 🐞 BUG-014
+- **Title:** Profile picture upload returns 500 server error  
+- **GitHub Link:** D-014  
+- **Requirement Affected:** User Profile – Media Upload  
+- **Severity:** High  
+
+#### Summary
+Uploading an image triggers 500 Internal Server Error.
+
+#### Steps to Reproduce
+1. Upload JPEG/PNG file in Profile.
+
+#### Expected Result
+Image uploads successfully.
+
+#### Actual Result
+Server returns 500 error.
+
+---
+
+### 🐞 BUG-015
+- **Title:** Map fails to load under slow internet connections  
+- **GitHub Link:** D-015  
+- **Requirement Affected:** Pickup Location – Map Rendering  
+- **Severity:** Medium  
+
+#### Summary
+Map fails to load on slow networks.
+
+#### Steps to Reproduce
+1. Throttle network to “Slow 3G”.  
+2. Open Pickup Request page.
+
+#### Expected Result
+Map loads with fallback or spinner.
+
+#### Actual Result
+Map fails to load.
+
+---
+
+### 🐞 BUG-016
+- **Title:** Pickup confirmation email not sent  
+- **GitHub Link:** D-016  
+- **Requirement Affected:** Notifications – Pickup Confirmation  
+- **Severity:** High  
+
+#### Summary
+Confirmation emails are not sent after scheduling a pickup.
+
+#### Steps to Reproduce
+1. Submit a pickup request.  
+2. Check inbox.
+
+#### Expected Result
+Confirmation email sent immediately.
+
+#### Actual Result
+No email received.
+
+---
+
+
 
 
 --
