@@ -41,42 +41,42 @@ This file contains test data and scenarios for various features of the project, 
 ### **Pending Requests**
 ```json
 {
-  "id": 1,
-  "userId": "user1@test.com",
-  "pickupDate": "2025-07-15",
-  "wasteType": "General",
-  "quantity": "Medium",
-  "status": "Pending",
-  "specialInstructions": "Please ring doorbell when arriving",
-  "address": "123 Main St, City, State 12345"
+    "id": 1,
+    "fullName": "John Doe",
+    "email": "user1@test.com",
+    "pickupLocation": "123 Main St, City, State 12345",
+    "wasteType": "General",
+    "pickupDate": "2025-07-15",
+    "description": "Please ring the doorbell when arriving",
+    "status": "Pending"
 }
 ```
 
 ### **Confirmed Requests**
 ```json
 {
-  "id": 2,
-  "userId": "user2@test.com",
-  "pickupDate": "2025-07-12",
-  "wasteType": "Recyclable",
-  "quantity": "Large",
-  "status": "Confirmed",
-  "specialInstructions": "",
-  "address": "456 Oak Ave, City, State 12345"
+   "id": 2,
+    "fullName": "Lerato Mokoena",
+    "email": "user2@test.com",
+    "pickupLocation": "456 Oak Ave, City, State 12345",
+    "wasteType": "Recyclable",
+    "pickupDate": "2025-07-12",
+    "description": "",
+    "status": "Confirmed"
 }
 ```
 
 ### **Completed Requests**
 ```json
 {
-  "id": 3,
-  "userId": "user3@test.com",
-  "pickupDate": "2025-07-10",
-  "wasteType": "Organic",
-  "quantity": "Small",
-  "status": "Completed",
-  "specialInstructions": "Backyard access",
-  "address": "789 Pine Rd, City, State 12345"
+    "id": 3,
+    "fullName": "Sipho Ndlovu",
+    "email": "user3@test.com",
+    "pickupLocation": "789 Pine Rd, City, State 12345",
+    "wasteType": "Organic",
+    "pickupDate": "2025-07-10",
+    "description": "Backyard access available",
+    "status": "Completed"
 }
 ```
 
