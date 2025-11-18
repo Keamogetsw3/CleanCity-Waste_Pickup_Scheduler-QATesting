@@ -491,6 +491,78 @@ Pickup status is not listed or visible.
 
 ------
 
+### 🐞 BUG-020
+- **Title:** Pickup request status does not update in real-time  
+- **GitHub Link:** [D020](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/69)  
+- **Requirement Affected:** Waste Management Requirements – Request Tracking  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The system fails to update the status of pickup requests dynamically. Users must manually refresh the page to see the latest status, which can cause confusion and delay in tracking their requests.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in with a registered user account.  
+3. Navigate to **Dashboard**.  
+4. Observe the status of a pickup request while it changes (e.g., from Pending to Confirmed).  
+
+#### Expected Result
+Status of each pickup request should update dynamically without requiring page refresh.  
+
+#### Actual Result
+Status does not update in real-time; the page must be refreshed to see changes.
+
+---
+
+### 🐞 BUG-021
+- **Title:** Users do not receive notifications for pickup request status changes  
+- **GitHub Link:** [D021](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/70)  
+- **Requirement Affected:** Waste Management Requirements – Request Tracking  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Users are not receiving any notifications (email, SMS, or in-app) when the status of their pickup requests changes. This can lead to missed pickups and significantly affects user experience.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in with a registered user account.  
+3. Schedule a pickup request or use an existing request.  
+4. Change the status of the pickup (e.g., Confirmed or Completed).  
+5. Observe that the user does not receive any notification.  
+
+#### Expected Result
+Users should receive notifications whenever the status of a pickup request changes.  
+
+#### Actual Result
+Users do not receive notifications for status changes.
+
+---
+
+### 🐞 BUG-022
+- **Title:** Feedback not associated with completed pickup  
+- **GitHub Link:** [D022](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/71)  
+- **Requirement Affected:** Waste Management Requirements – Request Tracking  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Users can submit feedback after a pickup is completed, but the feedback is not correctly associated with the corresponding completed pickup. This prevents proper tracking and reporting of user feedback.  
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Log in with a registered user account.  
+3. Navigate to **Dashboard**.  
+4. Select a completed pickup request and submit feedback.  
+5. Observe that the feedback is not linked to the completed pickup.  
+
+#### Expected Result
+Feedback should be stored and associated with the completed pickup request.  
+
+#### Actual Result
+Users can add feedback, but it is not associated with the completed pickup.
+
 
 ### 🐞 BUG-012
 - **Title:** Waste type filter returns incorrect results  
