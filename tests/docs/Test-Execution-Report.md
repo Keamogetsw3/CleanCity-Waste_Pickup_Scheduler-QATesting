@@ -10,7 +10,7 @@ The purpose of this report is to validate that the application meets its functio
 
 ---
 
-## **Table 1.1 👤 User Registration Test Cases**
+## **Table 1.1 👤 User Registration Test Cases Execution Report**
 
 | Test Case ID | Test Description                           | Test Type  | Expected Result                        | Actual Result                  | Status | Defect ID | Severity | Tester       | Date       |
 |--------------|---------------------------------------------|------------|----------------------------------------|--------------------------------|--------|-----------|----------|--------------|------------|
