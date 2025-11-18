@@ -1,6 +1,7 @@
 # CleanCity: Waste Pickup Scheduler - Test Report
 ![Alt text](cleancity.png)
 
+## 📋 **Document Information**
 **Course:** Software Testing & Quality Assurance  
 **Project Type:** Group Assessment  
 **Team Name:** KNS  
