@@ -253,7 +253,7 @@ The purpose of this report is to validate that the application meets its functio
 | TC095  | Verify responsiveness when resizing the browser window dynamically | Manual| Layout adapts in real-time without breaking or losing functionality |Menu bar expands excessively when resizing window, hiding all other content | Fail ❌ | [D-008](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55) | Major | Keamogetswe| 2025-11-14 |
 | TC096  | Verify the system displays correctly on desktop screens (1920×1080 and above) | Manual | All UI elements render properly and no horizontal scrolling occurs| All UI elements rendered properly and no horizontal scrolling occurs| Pass ✅ | — | —  | Keamogetswe| 2025-11-14 |
 | TC097  | Verify the system displays correctly on tablet screens (768px to 1024px) | Automated | ayout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur  | Pass ✅ |  | — | —  |Keamogetswe| 2025-11-14 |
-| TC098  | Verify the system displays correctly on mobile phones (320px to 767px) | Manual | Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur | |  | — | —  | |  |
+| TC098  | Verify the system displays correctly on mobile phones (320px to 767px) | Manual | Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur | Menu bar expands excessively when resizing window, hiding all other content | Fail ❌  | — | Major | Keamogetswe| 2025-11-14 |
 ---
 
 #### Table 11.2: Accessibility (📱 User Interface Requirements ) - (Manual testing )
