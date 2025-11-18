@@ -218,19 +218,24 @@ The following areas were not included in the testing scope:
 During testing of the CleanCity system, a total of 58 defects were identified across (42) functional and (16) non-functional modules. Defects were categorised by severity, module, and type to assess system readiness and guide remediation efforts.
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/4a827ff8-c81e-48c9-8b8d-b73eb2a2e07c" />
+
 ---
+
 Defects were categorised based on severity, with testing identifying 3 critical, 39 major, 12 minor, and 3 cosmetic issues. This classification highlights the areas of highest risk, allowing the team to prioritise fixes and retesting, focusing first on critical and major defects to ensure the stability and reliability of the CleanCity system before release.
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/48fafebf-4612-4442-904f-dd42a1b1c69d" />
+
 ---
 
 Most critical defects relate to login and authentication issues, while medium defects primarily involve scheduling and input validations. Non-functional and accessibility defects require UI and compliance fixes. Continuous monitoring is recommended for pending and in-progress defects to ensure timely resolution.
 
 ### 7.1 Sample of defect log
-ID	Issue Title	Severity	Risk ID	Status	GitHub Link	Test Case ID
-D-002	Existing user can login with a completely invalid password	Critical	R001	Open	Issue #31	TC-002
-D-003	System allows login with unregistered credentials	Critical	R001	Open	Issue #32	TC-003
-D-004	Pick-up request submitted without user registration	Critical	R001	Open	Issue #33	TC-020
+| ID    | Issue Title                                           | Severity  | Risk ID | Status | GitHub Link | Test Case ID |
+|-------|-------------------------------------------------------|----------|---------|--------|-------------|--------------|
+| D-002 | Existing user can login with a completely invalid password | Critical | R001    | Open   | Issue #31   | TC-002       |
+| D-003 | System allows login with unregistered credentials    | Critical | R001    | Open   | Issue #32   | TC-003       |
+| D-004 | Pick-up request submitted without user registration  | Critical | R001    | Open   | Issue #33   | TC-020       |
+
 
 
 ## 8. some of the issues  raised
