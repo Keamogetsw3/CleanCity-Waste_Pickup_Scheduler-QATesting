@@ -1426,73 +1426,33 @@ Inputs exceeding the maximum length should be rejected with a validation message
 #### Actual Result
 Very long inputs are accepted.
 ---
-
-### 🐞 BUG-012
-- **Title:** Waste type filter returns incorrect results  
-- **GitHub Link:** D-012  
-- **Requirement Affected:** Pickup History – Filtering  
-- **Severity:** High  
-
-#### Summary
-Filtering by waste type shows unrelated entries.
-
-#### Steps to Reproduce
-1. Open Pickup History.  
-2. Select “Plastic”.
-
-#### Expected Result
-Only plastic pickups displayed.
-
-#### Actual Result
-All waste types still appear.
-
----
-
-### 🐞 BUG-013
-- **Title:** Pickup history list pagination not working  
-- **GitHub Link:** D-013  
-- **Requirement Affected:** Pickup History – Navigation  
-- **Severity:** Medium  
+### 🐞 BUG-057
+- **Title:** System responds slowly to user interactions, exceeding 1-second threshold  
+- **GitHub Link:** [D057](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/103)  
+- **Requirement Affected:** Performance – User Interaction Responsiveness  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
 
 #### Summary
-Pagination buttons do not load new pages.
+The system fails to respond to user interactions within the expected **1-second timeframe**. During testing, the Total Blocking Time (TBT) was measured at **1,720 ms**, exceeding the specified performance requirement. This may result in delayed feedback to the user and degrade the overall experience.
 
 #### Steps to Reproduce
-1. Click “Next Page” in Pickup History.
+1. Open the CleanCity application in Google Chrome.  
+2. Navigate through typical user interactions such as clicking buttons, opening menus, or submitting forms.  
+3. Measure response time using browser  DevTools Performance tab.  
+4. Observe that the system takes longer than 1 second to respond to interactions.
 
 #### Expected Result
-Next set of records loads.
+All user interactions should respond **within 1 second**.
 
 #### Actual Result
-Same page remains displayed.
-
----
-
-### 🐞 BUG-014
-- **Title:** Profile picture upload returns 500 server error  
-- **GitHub Link:** D-014  
-- **Requirement Affected:** User Profile – Media Upload  
-- **Severity:** High  
-
-#### Summary
-Uploading an image triggers 500 Internal Server Error.
-
-#### Steps to Reproduce
-1. Upload JPEG/PNG file in Profile.
-
-#### Expected Result
-Image uploads successfully.
-
-#### Actual Result
-Server returns 500 error.
-
----
-
-### 🐞 BUG-015
+Total Blocking Time recorded was **1,720 ms**, exceeding the 1-second performance requirement.
+----
+### 🐞 BUG-058
 - **Title:** Map fails to load under slow internet connections  
-- **GitHub Link:** D-015  
+- **GitHub Link:** D0058 
 - **Requirement Affected:** Pickup Location – Map Rendering  
-- **Severity:** Medium  
+- **Severity:** Major 
 
 #### Summary
 Map fails to load on slow networks.
@@ -1507,38 +1467,3 @@ Map loads with fallback or spinner.
 #### Actual Result
 Map fails to load.
 
----
-
-### 🐞 BUG-016
-- **Title:** Pickup confirmation email not sent  
-- **GitHub Link:** D-016  
-- **Requirement Affected:** Notifications – Pickup Confirmation  
-- **Severity:** High  
-
-#### Summary
-Confirmation emails are not sent after scheduling a pickup.
-
-#### Steps to Reproduce
-1. Submit a pickup request.  
-2. Check inbox.
-
-#### Expected Result
-Confirmation email sent immediately.
-
-#### Actual Result
-No email received.
-
----
-
-
-
-
---
-
-### 🐞 BUG-017
-- **Title:** To be added by Keamo
-
----
-
-### 🐞 BUG-018
-- **Title:** To be added by Keamo
