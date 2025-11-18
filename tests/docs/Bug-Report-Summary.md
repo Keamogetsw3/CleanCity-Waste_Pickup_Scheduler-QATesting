@@ -1267,6 +1267,165 @@ Search results and filters should update dynamically based on user input.
 #### Actual Result
 Search queries and filters have no effect; the article list remains unchanged.
 ---
+### 🐞 BUG-050
+- **Title:** Date selection allows today and past dates  
+- **GitHub Link:** [D050](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/96)  
+- **Requirement Affected:** Input Validation Requirements – Date Fields  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The system allows selection of today or past dates, which violates the minimum date restriction (tomorrow). Users can submit invalid dates.  
+
+#### Steps to Reproduce
+1. Open the date picker on a form.  
+2. Select today or a past date.  
+3. Observe that the system does not show a validation error.  
+
+#### Expected Result
+Dates today and earlier should be rejected with a validation message.  
+
+#### Actual Result
+Dates today and earlier are accepted.
+
+---
+
+### 🐞 BUG-051
+- **Title:** Date selection allows dates beyond 30 days  
+- **GitHub Link:** [D051](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/97)  
+- **Requirement Affected:** Input Validation Requirements – Date Fields  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The date picker allows selection of dates beyond 30 days from today, violating the maximum date constraint.  
+
+#### Steps to Reproduce
+1. Open the date picker on a form.  
+2. Select a date more than 30 days from today.  
+3. Observe that no validation error is shown.  
+
+#### Expected Result
+Dates >30 days from today should be rejected with a validation message.  
+
+#### Actual Result
+Dates beyond 30 days are accepted.
+
+---
+
+### 🐞 BUG-052
+- **Title:** Name field accepts invalid lengths (<2 or >50 characters)  
+- **GitHub Link:** [D052](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/98)  
+- **Requirement Affected:** Input Validation Requirements – Name Fields  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The system allows names shorter than 2 characters or longer than 50 characters. This breaks data consistency.  
+
+#### Steps to Reproduce
+1. Enter a name shorter than 2 characters or longer than 50 characters.  
+2. Submit the form.  
+3. Observe that the system accepts invalid input.  
+
+#### Expected Result
+Names <2 or >50 characters should be rejected.  
+
+#### Actual Result
+Names outside valid length are accepted.
+
+---
+
+### 🐞 BUG-053
+- **Title:** Password field allows fewer than 8 characters  
+- **GitHub Link:** [D053](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/99)  
+- **Requirement Affected:** Input Validation Requirements – Password Fields  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The password field does not enforce a minimum of 8 characters, allowing weak passwords.  
+
+#### Steps to Reproduce
+1. Enter a password shorter than 8 characters.  
+2. Submit the form.  
+3. Observe that the password is accepted.  
+
+#### Expected Result
+Passwords <8 characters should be rejected with a validation error.  
+
+#### Actual Result
+Short passwords are accepted.
+
+---
+
+### 🐞 BUG-054
+- **Title:** Instructions field allows more than 200 characters  
+- **GitHub Link:** [D054](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/100)  
+- **Requirement Affected:** Input Validation Requirements – Instructions Field  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+The instructions field allows more than 200 characters, which may lead to display or storage issues.  
+
+#### Steps to Reproduce
+1. Enter more than 200 characters in the instructions field.  
+2. Submit the form.  
+3. Observe that no validation occurs.  
+
+#### Expected Result
+Instructions >200 characters should be rejected.  
+
+#### Actual Result
+Instructions >200 characters are accepted.
+
+---
+
+### 🐞 BUG-055
+- **Title:** Unicode and international characters cause email send failure  
+- **GitHub Link:** [D055](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/101)  
+- **Requirement Affected:** Input Validation Requirements – Unicode & International Characters  
+- **Severity:** Minor  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Using Unicode or international characters in email prevents sending emails correctly, though inputs are accepted.  
+
+#### Steps to Reproduce
+1. Enter Unicode characters in the email field.  
+2. Attempt to send an email.  
+3. Observe that the email fails to send.  
+
+#### Expected Result
+Emails with Unicode/international characters should be processed successfully.  
+
+#### Actual Result
+Cannot send email with symbols.
+
+---
+
+### 🐞 BUG-056
+- **Title:** Very long inputs are accepted beyond maximum length  
+- **GitHub Link:** [D056](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/102)  
+- **Requirement Affected:** Input Validation Requirements – Input Length  
+- **Severity:** Major  
+- **Environment:** Development, Google Chrome, Windows 10  
+
+#### Summary
+Inputs exceeding maximum allowed length are accepted, which may cause database or display issues.  
+
+#### Steps to Reproduce
+1. Enter a value longer than the maximum length for any input field.  
+2. Submit the form.  
+3. Observe that the system accepts it.  
+
+#### Expected Result
+Inputs exceeding the maximum length should be rejected with a validation message.  
+
+#### Actual Result
+Very long inputs are accepted.
+---
 
 ### 🐞 BUG-012
 - **Title:** Waste type filter returns incorrect results  
