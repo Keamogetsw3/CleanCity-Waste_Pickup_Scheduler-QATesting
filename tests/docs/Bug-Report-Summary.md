@@ -1,37 +1,42 @@
-# 🐞 CleanCity Bug Report Summary 
+# 🐞 CleanCity Bug Report Summary
 
 **Project:** CleanCity – Waste Pickup Scheduler  
 **Version:** 1.0  
 **Prepared by:** QA Team  
-**Date:** 18 November 2025 
+**Date:** 18 November 2025  
 
 ---
+
 ## 🔍 Overview
 
-This document provides a summary of all defects identified during manual and automated testing of the CleanCity application.  
+This document provides a summary of all defects identified during manual and automated testing of the CleanCity application.
+
+---
 
 ## ✅ Expected Behaviors
 
-1. Allow users to register and login to schedule waste pickup requests with valid dates, waste types and instructions.
-2. Allow admins to login 
+1. Allow users to register and log in to schedule waste pickup requests with valid dates, waste types, and instructions.  
+2. Allow admins to log in.
+
 ---
+
 ## 🐛 Reported Bugs
 
 ### 🐞 BUG-001
-- **Title:** Profile shows email username instead of Full Name after registration
-- **GitHub Link:** [D001](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/28).
-- **Requirement Affected:** User Registration – Profile Display
-- **Severity:** Cosmetic
-- **Environment:** Development, Google Chrome, Windows 10
+- **Title:** Profile shows email username instead of Full Name after registration  
+- **GitHub Link:** [D001](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/28)  
+- **Requirement Affected:** User Registration – Profile Display  
+- **Severity:** Cosmetic  
+- **Environment:** Development, Google Chrome, Windows 10  
 
 #### Summary
 After registering a new user with a proper Full Name, the profile page displays the username portion of the email (e.g., `user1` from `newuser@test.com`) instead of the Full Name (`New Test User`) provided during registration. This may cause confusion for users, as the system does not reflect the actual name they entered.
 
 #### Steps to Reproduce
-1. Register a new user with:
-   - **Full Name:** `New Test User`
-   - **Email:** `newuser@test.com`
-   - **Password:** `NewPass123`
+1. Register a new user with:  
+   - **Full Name:** `New Test User`  
+   - **Email:** `newuser@test.com`  
+   - **Password:** `NewPass123`  
 2. Log in with the newly registered account.  
 3. Navigate to the **User Profile** page.  
 4. Observe that the profile shows the email username instead of the Full Name.
@@ -41,350 +46,357 @@ The profile page should display the **Full Name** entered during registration.
 
 #### Actual Result
 The profile page displays the **username derived from the email** instead of the Full Name.
+
 ---
 
+### 🐞 BUG-002
+- **Title:** Existing user can log in with a different password than the one used during registration  
+- **GitHub Link:** [#31](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/31)  
+- **Requirement Affected:** User Login – Authentication  
+- **Severity:** Critical  
+- **Environment:** Development, Google Chrome, Windows 10  
 
-## 🐞 BUG-002  
-**Title:** Existing user can log in using an incorrect password  
-**GitHub Link:** D-002  
-**Requirement Affected:** User Login – Authentication  
-**Severity:** Critical  
-**Environment:** Development, Google Chrome, Windows 10  
+#### Summary
+An existing user is able to log in using a completely different password than the one set during registration. This is a major security issue because it allows unauthorized access to accounts.
 
-### Summary  
-The system allows users to log in with any incorrect password, bypassing the authentication mechanism.
-
-### Steps to Reproduce  
-1. Register a user:  
+#### Steps to Reproduce
+1. Register a new user:  
+   - Full Name: Test User  
    - Email: user1@test.com  
    - Password: TestPass123  
 2. Log out.  
-3. Attempt login with a wrong password (e.g., WrongPassword).  
+3. Attempt to log in using the same email but a different password (e.g., WrongPassword).  
+4. Observe the system allows login despite the incorrect password.
 
-### Expected Result 
+#### Expected Result
+The system should reject login attempts when the password does not match the one used during registration, displaying an error: "Invalid email or password."
 
-System should reject incorrect credentials and display: **“Invalid email or password.”**
-
-### Actual Result 
-
-Login succeeds even with a completely incorrect password.
+#### Actual Result
+The system allows login even with a different password.
 
 ---
 
-## 🐞 BUG-003  
-**Title:** System logs in unregistered users  
-**GitHub Link:** D-003  
-**Requirement Affected:** User Login – Authentication Validation  
-**Severity:** Critical  
-**Environment:** Development, Google Chrome, Windows 10  
+### 🐞 BUG-003
+- **Title:** System allows login with unregistered credentials  
+- **GitHub Link:** [#32](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/32)  
+- **Requirement Affected:** User Login – Authentication Validation  
+- **Severity:** Critical  
+- **Environment:** Development, Google Chrome, Windows 10  
 
-### Summary  
-Users can log in with credentials that do not exist in the system, bypassing all authentication checks.
+#### Summary
+The system logs in users even when the email and password do not belong to any registered account, bypassing authentication and posing a severe security risk.
 
-### Steps to Reproduce  
-1. Open login page.  
-2. Enter:  
+#### Steps to Reproduce
+1. Open the login page.  
+2. Enter unregistered credentials:  
    - Email: nonexist@test.com  
    - Password: AnyPassword  
-3. Click Login.  
+3. Click **Login**.  
+4. Observe the system logs in successfully.
 
-### Expected Result  
-System must reject unregistered credentials.
+#### Expected Result
+The system should validate credentials and display:  
+> “Invalid email or password.”
 
-### Actual Result  
-System logs in the nonexistent user successfully.
-
----
-
-## 🐞 BUG-004  
-**Title:** Pickup request submitted without authentication  
-**GitHub Link:** D-004  
-**Requirement Affected:** Pickup Request – User Authentication  
-**Severity:** High  
-**Environment:** Development, Google Chrome, Windows 10  
-
-### Summary  
-The system allows pickup requests to be submitted by unauthenticated users, violating business rules.
-
-### Steps to Reproduce  
-1. Open CleanCity app.  
-2. Navigate to Pickup Request form.  
-3. Enter valid details.  
-4. Submit without logging in.  
-
-### Expected Result  
-User must be required to log in before submitting a pickup request.
-
-### Actual Result  
-Pickup request is submitted successfully without authentication.
+#### Actual Result
+The system allows login and grants access with unregistered credentials.
 
 ---
 
-## 🐞 BUG-005  
-**Title:** System allows scheduling pickup with a past date  
-**GitHub Link:** D-005  
-**Requirement Affected:** Pickup Scheduling – Date Validation  
-**Severity:** Medium  
-**Environment:** Development, Google Chrome, Windows 10  
+### 🐞 BUG-004
+- **Title:** Pick-up request submitted without user registration  
+- **GitHub Link:** [#33](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/33)  
+- **Requirement Affected:** Pick-up Request – User Authentication  
+- **Severity:** High  
+- **Environment:** Development, Google Chrome, Windows 10  
 
-### Summary  
-Pickup requests can be scheduled using past dates, creating invalid service jobs.
+#### Summary
+Users can submit a pick-up request **without logging in**, violating the requirement that all pick-ups must be authenticated.
 
-### Steps to Reproduce  
-1. Open Pickup Request form.  
-2. Enter yesterday’s date.  
-3. Submit form.  
+#### Steps to Reproduce
+1. Open the application.  
+2. Navigate to the pick-up request form.  
+3. Fill in valid details.  
+4. Submit **without logging in**.  
 
-### Expected Result  
-System should reject past dates and display a validation error.
+#### Expected Result
+Submission should be blocked and prompt the user to log in.
 
-### Actual Result  
-System accepts the request and schedules a pickup for a past date.
-
----
-
-## 🐞 BUG-006  
-**Title:** System accepts instructions exceeding 200 characters  
-**GitHub Link:** D-006  
-**Requirement Affected:** Pickup Request – Input Validation  
-**Severity:** Medium  
-**Environment:** Development, Google Chrome, Windows 10  
-
-### Summary  
-Instruction text longer than 200 characters is accepted without validation or truncation.
-
-### Steps to Reproduce  
-1. Open Pickup Request form.  
-2. Enter a very long instruction (>200 characters).  
-3. Submit.  
-
-### Expected Result  
-System should restrict instructions to 200 characters.
-
-### Actual Result  
-Request is submitted with the full, overly long text.
+#### Actual Result
+The pick-up request is submitted successfully without authentication.
 
 ---
 
-## 🐞 BUG-007  
-**Title:** System allows multiple pickups for the same date  
-**GitHub Link:** D-007  
-**Requirement Affected:** Pickup Scheduling – Prevent Duplicate Dates  
-**Severity:** Medium  
-**Environment:** Development, Google Chrome, Windows 10  
+### 🐞 BUG-005
+- **Title:** Pickup is scheduled even with invalid date  
+- **GitHub Link:** #—  
+- **Requirement Affected:** Pickup Scheduling – Date Validation  
+- **Severity:** Medium  
+- **Environment:** Development, Google Chrome, Windows 10  
 
-### Summary  
-Users can schedule multiple pickups on the same date, leading to redundant service requests.
+#### Summary
+The system allows scheduling pickups with **past dates**, violating scheduling rules.
 
-### Steps to Reproduce  
-1. Log in.  
-2. Schedule a pickup for date X.  
-3. Schedule another pickup for the same date.  
+#### Steps to Reproduce
+1. Navigate to the Pickup Request form.  
+2. Enter:  
+   - **Date:** Yesterday  
+   - **Waste Type:** General  
+   - **Location:** Nairobi  
+   - **Instructions:** “Please ring doorbell”  
+3. Submit the form.
 
-### Expected Result  
-System should block duplicate pickup dates per user.
+#### Expected Result
+Past dates should be rejected with a validation message.
 
-### Actual Result  
-User can schedule multiple pickups on the same date.
-
----
-
-## 🐞 BUG-008  
-**Title:** Menu bar expands excessively when resizing window  
-**GitHub Link:** D-008  
-**Requirement Affected:** Responsive Design  
-**Severity:** Major  
-**Environment:** Chrome Desktop  
-**Type:** Non-Functional – Usability/Compatibility  
-
-### Summary  
-When resizing the browser window, the menu bar grows vertically and covers the entire content.
-
-### Steps to Reproduce  
-1. Open the app.  
-2. Shrink browser width gradually.  
-3. Observe menu behavior.  
-
-### Expected Result  
-Menu should collapse or adapt without hiding page content.
-
-### Actual Result  
-Menu expands uncontrollably and blocks all visible content.
+#### Actual Result
+The system accepts past dates and schedules the pickup.
 
 ---
 
-## 🐞 BUG-009  
-**Title:** Low-contrast text fails WCAG 2.1 AA  
-**GitHub Link:** D-009  
-**Requirement Affected:** Accessibility – WCAG Contrast  
-**Severity:** Major  
-**Environment:** Lighthouse Audit, Google Chrome  
+### 🐞 BUG-006
+- **Title:** System allows submission of pickup request with instructions exceeding 200 characters  
+- **GitHub Link:** [#41](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/41)  
+- **Requirement Affected:** Pickup Request Input Validation  
+- **Severity:** Medium  
+- **Environment:** Development, Google Chrome, Windows 10  
 
-### Summary  
-Several UI elements have insufficient contrast between background and text, failing WCAG 2.1 AA requirements.
+#### Summary
+Instructions longer than 200 characters are accepted without validation, leading to potential data and UI issues.
 
-### Steps to Reproduce  
-1. Open Chrome DevTools → Lighthouse.  
-2. Run Accessibility audit.  
-3. Review the contrast section.  
+#### Steps to Reproduce
+1. Enter instructions >200 characters.  
+2. Submit the request.  
+3. Observe that the system accepts the input.
 
-### Expected Result  
-All text should meet minimum 4.5:1 contrast ratio.
+#### Expected Result
+Reject instructions exceeding 200 characters or truncate automatically.
 
-### Actual Result  
-Multiple elements fail contrast requirements.
-
----
-
-## 🐞 BUG-010  
-**Title:** Layout breaks at 200% zoom  
-**GitHub Link:** D-010  
-**Requirement Affected:** Accessibility – Zoom & Reflow  
-**Severity:** Medium  
-**Environment:** Dev, Google Chrome  
-
-### Summary  
-At 200% zoom, the menu enlarges and hides all content, breaking accessibility standards.
-
-### Steps to Reproduce  
-1. Open the app.  
-2. Zoom to 200%.  
-
-### Expected Result  
-Content should remain visible and accessible at high zoom levels.
-
-### Actual Result  
-Menu covers all content, making the page unusable.
+#### Actual Result
+Request is accepted without error.
 
 ---
 
-## 🐞 BUG-011  
-**Title:** Missing alt text for meaningful images  
-**GitHub Link:** D-011  
-**Requirement Affected:** Accessibility – Alt Text  
-**Severity:** Medium  
-**Environment:** Development, Google Chrome  
+### 🐞 BUG-007
+- **Title:** System allows scheduling multiple pickups for the same date  
+- **GitHub Link:** [#42](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/42)  
+- **Requirement Affected:** Pickup Scheduling – Prevent Duplicate Dates  
+- **Severity:** Medium  
+- **Environment:** Development, Google Chrome, Windows 10  
 
-### Summary  
-Several meaningful images on the Awareness page do not have descriptive alt attributes.
+#### Summary
+Duplicate pickups on the same date are allowed, causing potential operational confusion.
 
-### Steps to Reproduce  
-1. Go to the Awareness page.  
-2. Inspect images via DevTools.  
+#### Steps to Reproduce
+1. Schedule a pickup for a date.  
+2. Schedule another pickup for the same date.  
+3. Observe the system allows both.
 
-### Expected Result  
-All meaningful images should have descriptive alt text.
+#### Expected Result
+Prevent duplicate pickups and show validation message.
 
-### Actual Result  
-Images are missing alt attributes, making them inaccessible.
-
----
-
----
-
-## 🐞 BUG-012  
-**Title:** Waste type filter returns incorrect results  
-**GitHub Link:** D-012  
-**Requirement Affected:** Pickup History – Filtering  
-**Severity:** High  
-
-### Summary  
-Filtering pickup history by waste type returns unrelated entries.
-
-### Steps to Reproduce  
-1. Go to Pickup History.  
-2. Select waste type: “Plastic”.  
-
-### Expected Result  
-Only plastic-related pickups should appear.
-
-### Actual Result  
-Entries from all waste types still appear.
+#### Actual Result
+Multiple pickups for the same date are accepted.
 
 ---
 
-## 🐞 BUG-013  
-**Title:** Pickup history list pagination not working  
-**GitHub Link:** D-013  
-**Requirement Affected:** Pickup History – Navigation  
-**Severity:** Medium  
+### 🐞 BUG-008
+- **Title:** Menu bar expands excessively when resizing window, hiding content  
+- **GitHub Link:** [D-008](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/55)  
+- **Requirement Affected:** Responsive Design  
+- **Severity:** Major  
+- **Environment:** Chrome / Desktop  
+- **Type:** Non-Functional – Usability/Compatibility  
 
-### Summary  
-Pagination buttons do not load new pages; the list remains unchanged.
+#### Summary
+On smaller widths, the menu bar grows vertically and hides page content.
 
-### Steps to Reproduce  
+#### Steps to Reproduce
+1. Open app in a desktop browser.  
+2. Resize horizontally.  
+3. Observe menu bar expanding and blocking content.
+
+#### Expected Result
+Menu should collapse or shrink, keeping content visible.
+
+#### Actual Result
+Menu expands uncontrollably, hiding all content.
+
+---
+
+### 🐞 BUG-009
+- **Title:** Low-contrast text fails WCAG 2.1 AA  
+- **GitHub Link:** D-009  
+- **Requirement Affected:** Accessibility – WCAG Contrast  
+- **Severity:** Major  
+- **Environment:** Lighthouse Audit, Google Chrome  
+
+#### Summary
+Several UI elements do not meet the minimum contrast ratio.
+
+#### Steps to Reproduce
+1. Run Lighthouse Accessibility audit.  
+2. Review contrast section.
+
+#### Expected Result
+All text must meet 4.5:1 contrast ratio.
+
+#### Actual Result
+Multiple elements fail the requirement.
+
+---
+
+### 🐞 BUG-010
+- **Title:** Layout breaks at 200% zoom  
+- **GitHub Link:** D-010  
+- **Requirement Affected:** Accessibility – Zoom & Reflow  
+- **Severity:** Medium  
+- **Environment:** Dev, Google Chrome  
+
+#### Summary
+At 200% zoom, the menu covers content and breaks accessibility.
+
+#### Steps to Reproduce
+1. Open the CleanCity application in Google Chrome.  
+2. Press `Ctrl` and `+` (Windows Laptop) to zoom in until the page reaches 200% zoom.  
+3. Observe how the menu overlaps the main content. 
+
+#### Expected Result
+Content remains visible and accessible.
+
+#### Actual Result
+Menu blocks all content.
+
+---
+
+### 🐞 BUG-011
+- **Title:** Missing alt text for meaningful images  
+- **GitHub Link:** D-011  
+- **Requirement Affected:** Accessibility – Alt Text  
+- **Severity:** Medium  
+- **Environment:** Development, Google Chrome  
+
+#### Summary
+Images on the Awareness page lack descriptive alt attributes.
+
+#### Steps to Reproduce
+1. Inspect images on Awareness page via DevTools.
+
+#### Expected Result
+All meaningful images have descriptive alt text.
+
+#### Actual Result
+Alt text missing, reducing accessibility.
+
+---
+
+### 🐞 BUG-012
+- **Title:** Waste type filter returns incorrect results  
+- **GitHub Link:** D-012  
+- **Requirement Affected:** Pickup History – Filtering  
+- **Severity:** High  
+
+#### Summary
+Filtering by waste type shows unrelated entries.
+
+#### Steps to Reproduce
 1. Open Pickup History.  
-2. Click “Next Page”.  
+2. Select “Plastic”.
 
-### Expected Result  
-Next set of pickup records should load.
+#### Expected Result
+Only plastic pickups displayed.
 
-### Actual Result  
-Same page remains displayed with no change.
-
----
-
-## 🐞 BUG-014  
-**Title:** Profile picture upload returns 500 server error  
-**GitHub Link:** D-014  
-**Requirement Affected:** User Profile – Media Upload  
-**Severity:** High  
-
-### Summary  
-Uploading a valid image triggers a 500 Internal Server Error.
-
-### Steps to Reproduce  
-1. Go to Profile.  
-2. Upload JPEG or PNG file.  
-
-### Expected Result  
-Image should upload successfully and appear in the profile.
-
-### Actual Result  
-A 500 server error is returned.
+#### Actual Result
+All waste types still appear.
 
 ---
 
-## 🐞 BUG-015  
-**Title:** Map fails to load under slow internet connections  
-**GitHub Link:** D-015  
-**Requirement Affected:** Pickup Location – Map Rendering  
-**Severity:** Medium  
+### 🐞 BUG-013
+- **Title:** Pickup history list pagination not working  
+- **GitHub Link:** D-013  
+- **Requirement Affected:** Pickup History – Navigation  
+- **Severity:** Medium  
 
-### Summary  
-The embedded map fails to load when the internet connection is slow, leaving a blank section.
+#### Summary
+Pagination buttons do not load new pages.
 
-### Steps to Reproduce  
+#### Steps to Reproduce
+1. Click “Next Page” in Pickup History.
+
+#### Expected Result
+Next set of records loads.
+
+#### Actual Result
+Same page remains displayed.
+
+---
+
+### 🐞 BUG-014
+- **Title:** Profile picture upload returns 500 server error  
+- **GitHub Link:** D-014  
+- **Requirement Affected:** User Profile – Media Upload  
+- **Severity:** High  
+
+#### Summary
+Uploading an image triggers 500 Internal Server Error.
+
+#### Steps to Reproduce
+1. Upload JPEG/PNG file in Profile.
+
+#### Expected Result
+Image uploads successfully.
+
+#### Actual Result
+Server returns 500 error.
+
+---
+
+### 🐞 BUG-015
+- **Title:** Map fails to load under slow internet connections  
+- **GitHub Link:** D-015  
+- **Requirement Affected:** Pickup Location – Map Rendering  
+- **Severity:** Medium  
+
+#### Summary
+Map fails to load on slow networks.
+
+#### Steps to Reproduce
 1. Throttle network to “Slow 3G”.  
-2. Open Pickup Request page.  
+2. Open Pickup Request page.
 
-### Expected Result  
-Map should load with a fallback or spinner.
+#### Expected Result
+Map loads with fallback or spinner.
 
-### Actual Result  
-Map fails to load completely.
+#### Actual Result
+Map fails to load.
 
 ---
 
-## 🐞 BUG-016  
-**Title:** Pickup confirmation email not sent  
-**GitHub Link:** D-016  
-**Requirement Affected:** Notifications – Pickup Confirmation  
-**Severity:** High  
+### 🐞 BUG-016
+- **Title:** Pickup confirmation email not sent  
+- **GitHub Link:** D-016  
+- **Requirement Affected:** Notifications – Pickup Confirmation  
+- **Severity:** High  
 
-### Summary  
-Users do not receive confirmation emails after scheduling a pickup.
+#### Summary
+Confirmation emails are not sent after scheduling a pickup.
 
-### Steps to Reproduce  
+#### Steps to Reproduce
 1. Submit a pickup request.  
-2. Check email inbox.  
+2. Check inbox.
 
-### Expected Result  
-A confirmation email should be sent immediately.
+#### Expected Result
+Confirmation email sent immediately.
 
-### Actual Result  
-No email is received.
+#### Actual Result
+No email received.
+
 ---
-## 🐞 BUG-017  : to be added by Keamo
+
+### 🐞 BUG-017
+- **Title:** To be added by Keamo
+
 ---
-## 🐞 BUG-018  : to be added by Keamo
+
+### 🐞 BUG-018
+- **Title:** To be added by Keamo
