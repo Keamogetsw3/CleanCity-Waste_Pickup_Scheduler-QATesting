@@ -207,7 +207,6 @@ The following areas were not included in the testing scope:
 | Boundary / Edge Cases  |                |        |        |         |         |
 | **Overall Total**      |                |        |        |         |         |
 
-
 ---
 ## 6.2 (b) Sample test cases execution report
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/bd1a5fdb-4ab9-429f-b575-907df7ba44ea" />
@@ -237,20 +236,20 @@ Most critical defects relate to login and authentication issues, while medium de
 | D-004 | Pick-up request submitted without user registration  | Critical | R001    | Open   | Issue #33   | TC-020       |
 
 
-
-## 8. some of the issues  raised
+### 7.2 some of the issues  raised
 <img width="1308" height="540" alt="image" src="https://github.com/user-attachments/assets/7593d44d-efcd-4e3b-b043-be54b286be19" />
 
-# 9. Overall status
-## Overall Summary
 
-## Testing Summary
+## 9. Overall Summary
+
+### 9.1 Testing Summary
 The CleanCity system underwent extensive testing across all major modules, with over 120 planned test cases executed. Testing covered functional areas such as registration, login, pickup scheduling, dashboard management, and community features. Several critical and major defects were discovered, especially in authentication, request management, and scheduling functionality. Non-functional testing also revealed issues in UI responsiveness and accessibility. Overall, testing provided strong coverage of system behavior and usability across different browsers and devices.
 
-## Quality Assessment
+
+## 9.2 Quality Assessment
 The overall quality of the system is improving, but it is not yet ready for deployment. Critical defects affecting login security, data validation, and request workflows reduce the stability and reliability of the application. Medium-level issues also impact user experience, particularly in scheduling and interface handling. While core workflows function conceptually, further refinement and bug resolution are required. The structure of the system shows strong potential once major issues are addressed.
 
-## Risk Assessment
+## 10. Risk Assessment
 - Authentication vulnerabilities that allow invalid or unregistered users to log in.
 - Acceptance of invalid data, including pickup dates and oversized input fields.
 - Missing or incomplete validation across critical workflows.
@@ -260,10 +259,10 @@ The overall quality of the system is improving, but it is not yet ready for depl
 - Incomplete backend features causing test blocks and pending cases.
 - Risk of incorrect or delayed waste pickup due to flawed request management logic.
 
-## Release Recommendation
+## 11. Release Recommendation
 Based on current results, the system **SHOULD NOT BE RELEASED** in its current state. Critical and major defects must be resolved and retested before deployment. Key priorities for developers include fixing login validation, improving request handling logic, refining UI responsiveness, and completing missing backend functionalities. A full regression testing cycle will be required once fixes are implemented. Only after these actions can the system be considered ready for a reliable and stable release.
 
-## Testing Challenges
+## 12. Testing Challenges
 - Unstable test environment leading to inconsistent test results.
 - Some system modules were still under development, causing incomplete or pending test cases.
 - Delayed bug fixes slowed down regression testing cycles.
@@ -275,17 +274,38 @@ Based on current results, the system **SHOULD NOT BE RELEASED** in its current s
 
 
 
-## how to acces the data 
-on the repository link click on the test file - then on the Doc data.....you will have access to all impoertant documents on the software testing
-<img width="1331" height="481" alt="image" src="https://github.com/user-attachments/assets/74ef4722-8b0b-40a4-951e-ed9007de1de6" />
-<img width="1331" height="592" alt="image" src="https://github.com/user-attachments/assets/38a8d8f2-b777-411f-8156-96421c60806c" />
+## 13. how to acces the data 
+### 📂 Folder Structure
 
-# Approvals
+```bash
+/tests
+│
+├── data/                                   # Contains all test data files
+│   └── test_data.md                        # Valid, invalid, boundary & edge case test data
+│
+├── docs/                                   # Full test documentation library
+│   ├── Bug-Report-Summary.md               # Summary of all logged bugs grouped by severity & status
+│   ├── Defects-Reports.md                  # Detailed defect reports with reproduction steps
+│   ├── Risk_Analysis_Form.md               # Identified risks, impact levels, mitigation steps
+│   ├── Test_Cases.md                       # Complete list of all test cases with expected results & risk IDs
+│   ├── Test-Execution-Report.md            # Execution results showing pass/fail and defect links
+│   ├── Test_Management_Plan.md             # Strategy, scope, objectives, roles, and timelines for testing
+│   ├── defect-reporting-standards.md       # Standards & guidelines for writing and managing defect reports
+│   └── Final-Test-Report.md                # Final summary report at test cycle completion
+│
+├── Scripts/                                # Automated scripts for testing or preparing test data
+│   ├──                  
+│   ├──                        
+│   ├──                
+│   └──                         
+│
+├── Final-Test-Report.pdf                   # Exported PDF version of the final full test report
+└── README.md                               # Documentation file explaining the test folder structure
 
+```
+
+## 14. Approved By
 The following stakeholders have reviewed the CleanCity Software Testing Report and approve its contents, findings, and recommendations. Their signatures confirm that the testing process has been completed to the agreed standards and that all documented results are accurate.
-
-## Approved By
-
 ### Test Manager
 **Name:** Keamogetswe  
 **Signature:** _______________KM___________  
