@@ -102,6 +102,9 @@ CleanCity is a web-based platform designed to streamline and modernize waste man
 | Boundary / Edge Cases | 2+ | 0 | 0 | Pending |
 
 ---
+## 5 b. sample test cases 
+<img width="1312" height="588" alt="image" src="https://github.com/user-attachments/assets/0dd3f2eb-5fd1-429f-984c-723c36d60b66" />
+
 
 ## 6. Defect Summary
 
