@@ -177,8 +177,8 @@
 #### Table 5.1.1 Test cases for **manual testing** 📝
 | Test Case ID | Objective                                                          | Expected Result                                                                   | Risk Link | Notes              |
 | ------------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------------- | --------- | ------------------ |
-| TC066        | Verify that users can view and edit their profile information      | Users can view their profile details and successfully edit and save changes       | R005      | Positive test case |
-| TC067        | Verify that users can upload a profile picture                     | Users can upload a profile picture and it is displayed correctly on their profile | R005      | Positive test case |
+| TC066        | Verify that users can view and edit their profile information      | Users can view their profile details and successfully edit and save changes       | R013      | Positive test case |
+| TC067        | Verify that users can upload a profile picture                     | Users can upload a profile picture and it is displayed correctly on their profile | R013      | Positive test case |
 
 
 ---
