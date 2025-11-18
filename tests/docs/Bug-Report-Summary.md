@@ -20,7 +20,7 @@ This document provides a summary of all defects identified during manual and aut
 ---
 ### 🐞 BUG-001
 **Title:** Profile shows email username instead of Full Name after registration  
-**GitHub Link:**   
+**GitHub Link:** [D001](https://github.com/Keamogetsw3/CleanCity-Waste_Pickup_Scheduler-QATesting/issues/28)
 **Requirement Affected:** User Registration – Profile Display  
 **Severity:** Comestic  
 **Environment:** Development, Google Chrome, Windows 10  
@@ -42,8 +42,8 @@ The profile page should display the **Full Name** entered during registration.
 
 #### Actual Result
 The profile page displays the **username derived from the email** instead of the Full Name.
-
 ---
+
 
 ## 🐞 BUG-002  
 **Title:** Existing user can log in using an incorrect password  
