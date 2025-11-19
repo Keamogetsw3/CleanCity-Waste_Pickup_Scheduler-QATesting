@@ -29,7 +29,7 @@ CleanCity is a web-based platform designed to streamline waste pickup scheduling
   - Authentication: System allows login with unregistered or invalid credentials.
 
 ### 1.2 Recommandation:
-We have identified major issues that affect the core functionalities of the app, therefore, we as KNA QA team we **Recommend** that the app should ** NOT BE RELEASED** until issues have been resolved. 
+We have identified major issues that affect the core functionalities of the app, therefore, we as KNA QA team we **Recommend** that the app should **NOT BE RELEASED** until issues have been resolved. 
 
 ## 2. Objectives
 As the KNS software testing team, our primary objective is to ensure that the CleanCity system meets all functional and non-functional requirements, functions reliably and is secure. Specifically, we aim to:
