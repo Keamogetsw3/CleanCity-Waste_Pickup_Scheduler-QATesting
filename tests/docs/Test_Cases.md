@@ -200,13 +200,27 @@
 | TC071        | Verify that admins can approve, reject, or modify pickup requests | Admins can successfully approve, reject, or edit requests                | R004      | Positive test case |
 | TC072        | Verify that admins can assign pickup dates and times              | Admins can assign or update pickup dates and times and changes are saved | R004      | Positive test case |
 | TC073        | Verify that admins can filter and search pickup requests          | Filtering and search return correct requests based on criteria           | R004      | Positive test case |
-
+| TC074  | Verify that admins can receive or reply to feedback | Feedback system should accept and reply properly | R004|  |
 
 ---
 #### **6.2 User Management  Test Cases**
+#### Table 6.2.1 Test cases for **manual testing** 📝
+| Test Case ID | Objective | Expected Result | Risk Link  | Notes |
+|--------------|-------------|----------------|----------------| ----------------|
+| TC075  | Verify that admins can view all registered users |  Admin can successfully view a complete list of all registered system users | R004| |
+| TC076  | Verify that admins can change user roles  | Admin can update user roles and changes are saved and reflected immediately  | R004| |
+| TC077 | Verify that admins can suspend or delete accounts |   Admin can suspend or delete user accounts and the system updates the status | R004 | |
+| TC078 | Verify that system provides user activity reports| Admin can view activity reports  | R004| |
 
 ---
 #### **6.3 Content Moderation Test Cases**
+| Test Case ID | Objective | Expected Result | Risk Link  | Notes |
+|--------------|-------------|----------------|----------------| ----------------|
+| TC079  | |  | R004| |
+|  TC080 | |  | R004| |
+|  TC081 | |  | R004| |
+| TC082| |  | | R004|
+| TC083| |  | | R004 |
 
 ---
 ### ***7. 🔔 Notification System Requirements**
@@ -214,7 +228,7 @@
 
 | Test Case ID | Objective | Expected Result | Risk Link  | Notes |
 |--------------|-------------|----------------|----------------| ----------------|
-|   | |  | |
+|   | |  | | |
 
 ### 1.4 User Session Management (localStorage)
 | Test Case ID | Objective                                              | Expected Result                                                 | Risk ID |
