@@ -25,6 +25,7 @@
 | R011 | Offline & Network Issues | App fails to handle poor connectivity or offline mode | Low | Medium | Medium | Implement offline caching and retry mechanisms |
 | R012 | Data Integrity & Backup | Missing database constraints or failed data backup | Medium | Medium | Medium | Enforce data integrity rules and schedule auto-backups |
 | R013 | Dashboard & Analytics  | Failures in profile updates, following/unfollowing, feed loading, achievement sharing, or event participation caused by API errors, data sync issues, or UI inconsistencies | Medium         | High       | High         | Strengthen API validation, improve caching and synchronization logic, enforce privacy checks, perform end-to-end testing, and enable real-time error monitoring |
+| R014| Support and Maintenance||||||
 
 
 ---
