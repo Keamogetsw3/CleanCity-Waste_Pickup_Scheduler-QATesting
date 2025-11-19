@@ -275,9 +275,9 @@ This section focuses on testing the system's non-functional requirements, which 
 |  TC097 | |  | | R014|
 
 ---
-### 10. 📱 User Interface Requirements
+### 11. 📱 User Interface Requirements
 ---
-#### 10.1 Responsive Design
+#### 11.1 Responsive Design
 #### Table 10.1.1: Test cases for **manual testing** 📝
 | Test Case ID |  Objective | Expected Result | Risk Link  |
 |--------------|------------|----------------|----------------|
@@ -285,14 +285,14 @@ This section focuses on testing the system's non-functional requirements, which 
 |TC99 | Verify the system displays correctly on desktop screens (1920×1080 and above)| All UI elements render properly and no horizontal scrolling occurs| R008 |
 
 ---
-#### Table 10.1.2: Test cases for **automated testing** 📝
+#### Table 11.1.2: Test cases for **automated testing** 📝
 | Test Case ID |  Objective | Expected Result | Risk Link  |
 |--------------|------------|----------------|----------------|
 |TC100 | Verify the system displays correctly on tablet screens (768px to 1024px) | Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur | R008 |
 |TC101 | Verify the system displays correctly on mobile phones (320px to 767px)| Layout adjusts appropriately, Content fits the screen, navigation is usable and no overlapping elements occur| R008 |
 
 ---
-#### 10.2 Accessibility
+#### 11.2 Accessibility
 ### Table 10.2.1: Test cases for Accessibility (Manual Testing )
 | Test Case ID | Objective | Expected Result | Risk Link  |
 |--------------|----------|------------|----------------|
@@ -302,14 +302,14 @@ This section focuses on testing the system's non-functional requirements, which 
 |TC105 |Verify all meaningful images have descriptive alt text | Images have descriptive alt text | R-008 |
 
 ---
-#### Table 10.2.2: Test cases for Accessibility (automated Testing )
+#### Table 11.2.2: Test cases for Accessibility (automated Testing )
 | Test Case ID | Objective | Expected Result | Risk Link  |
 |--------------|----------|------------|----------------|
 |TC106 |Verify contrast ratio meets WCAG 2.1 AA (minimum 4.5:1 for text) | All text and UI elements meet required contrast ratios | R008|
 |TC107 |Verify Screen Reader Announces Form Field Labels Correctly| Screen reader announce each field correctly| R008 |
 
 ---
-#### 10.3 Navigation
+#### 11.3 Navigation
 #### Table 10.3.1: Test cases for manual testing
 | Test Case ID |  Objective | Expected Result | Risk Link  |
 |--------------|------------|----------------|----------------|
@@ -319,27 +319,27 @@ This section focuses on testing the system's non-functional requirements, which 
 |TC111 | Verify search bar visibility and returns relevant results | Search bar is visible and shows results relevant to the keyword are displayed | R008 |
 
 ---
-### 11. 🔒  Data Management Requirements
+### 12. 🔒  Data Management Requirements
 ---
-#### 11.1 Data Persistence
+#### 12.1 Data Persistence
 #### Table 11.1.1: Test cases for manual testing
 | Test Case ID | Objective | Expected Result | Risk Link  | Notes |
 |--------------|-------------|----------------|----------------| ----------------|
 |  TC114 | |  | R007 |  |
 |  TC115 | |  | R007 |  |
 
-#### Table 11.1.2: Test cases for Automated testing
+#### Table 12.1.2: Test cases for Automated testing
 | Test Case ID | Objective | Expected Result | Risk Link  | Notes |
 |--------------|-------------|----------------|----------------| ----------------|
 | TC112  | |  | R006 | |
 | TC113  | |  | R007| |
 
 ---
-### 12. 🚀 Performance Requirements
+### 13. 🚀 Performance Requirements
 ---
 
-#### 12.1 Response Time
-#### Table 12.1.1: Test cases for Automated testing
+#### 13.1 Response Time
+#### Table 13.1.1: Test cases for Automated testing
 | Test Case ID | Objective | Expected Result | Risk Link  |  |
 |--------------|----------|------------|----------------|----------------|
 |TC116  |  | | R008 | |
@@ -347,15 +347,34 @@ This section focuses on testing the system's non-functional requirements, which 
 
 ---
 
-#### 12.2 Browser Compatibility
-#### Table 12.2.1: Test cases for Manual testing
+#### 13.2 Browser Compatibility
+#### Table 13.2.1: Test cases for Manual testing
 | Test Case ID | Objective | Expected Result | Risk Link |  Notes |
 |--------------|----------|------------|----------------|----------------|
 | TC118 | Verify system works on Google Chrome (latest 2 versions) by performing core functionalities (login, form submission, navigation)| Application functions correctly without layout issues, errors, or crashes| R009 |
 | TC119 | Verify system works on Mozilla Firefox (latest 2 versions) by performing core functionalities (login, form submission, navigation)| Application functions correctly without layout issues, errors, or crashes | R009 |
 | TC120 | Verify system works on Microsoft Edge (latest 2 versions) by performing core functionalities (login, form submission, navigation)| Application functions correctly without layout issues, errors, or crashes | R009 |
-------
 
+------
+### 14 📋 Error Handling Requirements
+---
+#### 14.1 User-Friendly Errors
+#### Table 14.1.1: Test cases for Manual testing
+| Test Case ID | Objective                                                            | Expected Result                                                                                | Risk Link | Notes        |
+| ------------ | -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | --------- | ------------ |
+| **TC125**    | Verify that the system provides guidance for resolving common issues | For common issues (e.g., invalid input, login failure), the system shows guidance or help tips |  R006  | **Positive Test Case** |
+
+---
+
+#### Table 14.1.2: Test cases for Automated testing
+| Test Case ID | Objective                                       | Expected Result                                                | Risk Link | Notes        |
+| ------------ | ----------------------------------------------- | -------------------------------------------------------------- | --------- | ------------ |
+| **TC121**    | Verify system handles network errors on Fast 3G | Network errors under Fast 3G connection are handled gracefully | R011     | **Positive** |
+| **TC122**    | Verify system handles network errors on Slow 3G | Network errors under Slow 3G connection are handled gracefully | R011 | **Negative** |
+| **TC123**    | Verify system handles Offline scenario          | Offline mode shows friendly message + blocks network actions   | R011       | **Positive** |
+| **TC124**    | Verify error messages are clear and actionable  | All error messages are easy to understand and guide the user   | R010      | **Positive** |
+
+---
 
 | Test Case ID | Objective | Expected Result | Risk Link  | Notes |
 |--------------|-------------|----------------|----------------| ----------------|
