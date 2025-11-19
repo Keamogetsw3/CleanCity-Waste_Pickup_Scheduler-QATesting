@@ -282,7 +282,7 @@ The purpose of this report is to validate that the application meets its functio
 | TC112        | Verify that the system validates all user inputs before processing | Automated | Invalid or incomplete inputs are rejected; appropriate error messages displayed                       |               | Pass ✅    | —         | —        |Keamogetswe | 2025-11-17 |
 | TC113        | Verify that the system prevents SQL injection attacks              | Automated | SQL injection attempts are blocked; system remains secure and stable                                  |  Injection attempt rejected, no login | Pass ✅    | —         | —        |Keamogetswe | 2025-11-17 |
 | TC114        | Verify that the system prevents XSS attacks                        | Manual| Scripts or malicious content in input fields are sanitized; system does not execute malicious scripts |  system does not execute malicious scripts  |  Pass ✅    | —         | —        |Keamogetswe | 2025-11-18 |
-| TC115        | Verify that user-generated content is sanitized before storage     | Automated | All special characters and HTML tags are sanitized; stored content is safe to display                 |               |        |           | High     |        |      |
+| TC115        | Verify that user-generated content is sanitized before storage     | Manual | All special characters and HTML tags are sanitized; stored content is safe to display                 |               |        |           |     |        |      |
 
 ---
 ## **13. 🚀 Performance Requirements**
