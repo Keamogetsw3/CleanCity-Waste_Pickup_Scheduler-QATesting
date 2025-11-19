@@ -216,26 +216,21 @@ Test cases were designed using both white-box and black-box techniques. In total
 
 ---
 Out of **138** formulated test cases, **134** were successfully executed, resulting in a **97%** execution rate.
-### Functional Test Execution
 
-| Category               | Total | Pass ✅ | Fail ❌ | Defects Linked          |
-|------------------------|-------|--------|---------|--------------------------|
-| User Registration      | 10    | 10     | 0       | —                        |
-| User Login             | 10    | 6      | 4       | D-002, D-003             |
-| User Logout            | 4     | 2      | 2       | D-004                    |
-| Role-Based Access      | 4     | 4      | 0       | —                        |
-| Pickup Scheduling      | 8     | 3      | 5       | D-005, D-006, D-007      |
-| Request Management     | 8     | 0      | 8       | D000                     |
-| Request Tracking       | 3     | 1      | 2       | —                        |
-| Dashboard & Analytics  | 3     | 0      | 3       | D000                     |
-| Blog System            | 7     | 4      | 3       | D000                     |
-| Awareness Section      | 5     | 5      | 0       | —                        |
-| Community Feed         | 3     | 3      | 0       | —                        |
-| Community Features     | 3     | 1      | 2       | D001, D002               |
-| Administrative Functions | 12   | 0      | 0       | Pending                  |
-| Notification System    | 4     | 0      | 0       | Pending                  |
-| Data Management        | 5     | 5      | 0       | —                        |
-| Support & Maintenance  | 3     | 0      | 0       | Pending                  |
+### 6.2.1 Functional Test Execution
+
+| Type                     | Total / Executed | Pass | Fail |
+|--------------------------|-----------------|------|------|
+| Authentication           | 27              | 22   | 5    |
+| Waste Management         | 19              | 5    | 14   |
+| Dashboard & Analytics    | 3               | 0    | 3    |
+| Content Management       | 15              | 12   | 3    |
+| Community Features       | 4               | 1    | 3    |
+| Administrative Functions | 14              | 3    | 11   |
+| Notification System      | 4               | 3    | 1    |
+| Data Management          | 5               | 5    | 0    |
+| Support & Maintenance    | 3               | 0    | 3    |
+| **Total**                | 94              | 51   | 43   |
 
 ---
 
