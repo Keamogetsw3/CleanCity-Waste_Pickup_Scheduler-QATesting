@@ -375,6 +375,16 @@ This section focuses on testing the system's non-functional requirements, which 
 | **TC124**    | Verify error messages are clear and actionable  | All error messages are easy to understand and guide the user   | R010      | **Positive** |
 
 ---
+#### 14.2 Form Validation
+#### Table 14.2.1: Test cases for Automated testing
+| Test Case ID | Objective                                                         | Expected Result                                                                                                     | Risk Link | Notes        |
+| ------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- | --------- | ------------ |
+| **TC126**    | Verify that the system validates forms in real-time               | Form fields are validated instantly as the user types or selects options; invalid input triggers immediate feedback | R006| **Positive** |
+| **TC127**    | Verify that the system prevents form submission with invalid data | Form cannot be submitted when required fields are empty or invalid; user is notified of errors                      | R006 | **Positive** |
+| **TC128**    | Verify that the system highlights validation errors clearly       | Invalid fields are visually highlighted so user can identify and fix them easily                                    | R006 | **Positive** |
+
+
+----
 
 | Test Case ID | Objective | Expected Result | Risk Link  | Notes |
 |--------------|-------------|----------------|----------------| ----------------|
